@@ -1,14 +1,14 @@
 //original code credit to websitebeaver.com
 // see their code at: https://github.com/WebsiteBeaver/simple-webrtc-video-chat-using-firebase/blob/master/js/script.js
 //Create an account on Firebase, and use the credentials they give you in place of the following
-var config = {
-  apiKey: "AIzaSyBajPcoloVgJTcE44NhPLvVsqnWG9RSBEE",
-  authDomain: "simple-webrtc-video-chat.firebaseapp.com",
-  databaseURL: "https://simple-webrtc-video-chat.firebaseio.com",
-  projectId: "simple-webrtc-video-chat",
-  storageBucket: "simple-webrtc-video-chat.appspot.com",
-  messagingSenderId: "748074977719"
-};
+  var config = {
+    apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
+    authDomain: "hackathon-video-chat.firebaseapp.com",
+    databaseURL: "https://hackathon-video-chat.firebaseio.com",
+    projectId: "hackathon-video-chat",
+    storageBucket: "hackathon-video-chat.appspot.com",
+    messagingSenderId: "633008113206"
+  };
 firebase.initializeApp(config);
 
 var database = firebase.database().ref();
