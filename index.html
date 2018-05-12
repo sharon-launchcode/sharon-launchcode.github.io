@@ -45,31 +45,23 @@
     </style>
 </head>
   <body>
-       <!-- credit for navigator code https://gist.github.com/greenido/6238800 -->
-           <div id='video-space'>
-      <video autoplay></video>
-    </div>
 
-    <script>
-      navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
-      var constraints = {audio: false, video: true};
-      var video = document.querySelector("video");
-      function successCallback(stream) {
-        // stream available to console so you could inspect it and see what this object looks like
-        window.stream = stream;
-        if (window.URL) {
-          video.src = window.URL.createObjectURL(stream);
-        } else {
-          video.src = stream;
-        }
-        video.play();
-      }
-      function errorCallback(error) {
-        console.log("navigator.getUserMedia error: ", error);
-      }
-      navigator.getUserMedia(constraints, successCallback, errorCallback);
-    </script>
        
 
   </body>
+   <!-- instructions from firebase: Add firebase to webapp 
+Copy and paste the snippet below at the bottom of your HTML, before other script tags -->  
+<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
+    authDomain: "hackathon-video-chat.firebaseapp.com",
+    databaseURL: "https://hackathon-video-chat.firebaseio.com",
+    projectId: "hackathon-video-chat",
+    storageBucket: "hackathon-video-chat.appspot.com",
+    messagingSenderId: "633008113206"
+  };
+  firebase.initializeApp(config);
+</script>
 </html>
