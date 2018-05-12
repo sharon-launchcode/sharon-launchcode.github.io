@@ -21,31 +21,15 @@
 <head>
   <title>Project 2018 | Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="main.css">
-     
-     <style>
-      video {
-        height: 20em;
-        position: relative;
-        left: 10%;
-      }
-      #video-space {
-        padding: 1em;
-        background-color: rgba(70, 70, 7, 0.77);
-        border-radius: 25px;
-      }
-      ul {
-        padding: 2em;
-        font-family: sans-serif;
-        font-size: 120%;
-        line-height:160%;
-        background-color: orange;
-        border-radius: 15px
-      }
-    </style>
-</head>
-  <body>
-
+  <link rel="stylesheet" href="css/main.css">
+</head>     
+  <body onload="showMyFace()">
+    <video id="yourVideo" autoplay muted playsinline></video>
+    <video id="friendsVideo" autoplay playsinline></video>
+    <br />
+    <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="js/script.js"></script>
        
 
   </body>
