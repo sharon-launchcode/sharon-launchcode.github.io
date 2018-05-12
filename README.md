@@ -1,4 +1,4 @@
-# sharon-launchcode.github.io
+# Virtual Clinic Prototype
 
 ## Created for Legal-Aid Hackathon 2018
 #### https://www.legalaidhackathon.org/
