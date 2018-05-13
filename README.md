@@ -1,9 +1,11 @@
 # Virtual Clinic Prototype
-
 ## Created for Legal-Aid Hackathon 2018
 #### https://www.legalaidhackathon.org/
 
-#### Project Idea | Kimi deMent
+##### WebRTC code based on the tutorial by David Marcus
+##### https://websitebeaver.com/insanely-simple-webrtc-video-chat-using-firebase-with-codepen-demo#explanation-of-codepen-demo
+
+## Project Idea | Kimi deMent
 ##### https://www.legalaidhackathon.org/blog/remote-virtual-legal-clinic?categoryId=47390
 
 ```I am interested in building a remote connectivity platform (such as an app) that can be used to set up remote/virtual legal clinics specifically designed to service rural areas that LSC funded organizations could overlay into their existing intake/screenings, and non LSC funded organizations could also utilize. It would theoretically be set up so that the user would access either a web platform or app and would be guided through a series of plain-language questions on income, eligibility, etc.```
