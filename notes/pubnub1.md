@@ -13,6 +13,7 @@
         
         
 ##### HTML Backbone
+ <!-- 
 	<div id="vid-box"></div>
 
 	<form name="loginForm" id="login" action="#" onsubmit="return login(this);">
@@ -24,5 +25,5 @@
 		<input type="text" name="number" placeholder="Enter user to dial!" />
 		<input type="submit" value="Call"/>
 	</form>
-
+-->
 #####
