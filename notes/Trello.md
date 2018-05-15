@@ -1,7 +1,7 @@
-### About the use of Trello in the Legal Aid Hackathon 2018
+## About the use of Trello in the Legal Aid Hackathon 2018
 ##### https://trello.com/b/0a506isp/legal-aid-virtual-hackathon-may-2018
 
-### Tasks for the Legal Hackathon were outlined and disseminated in Trello
+#### Tasks for the Legal Hackathon were outlined and disseminated in Trello
 ##### Trello was used for Agile/Kanban purposes
 
 ![Screen Shot 1](Trello1.png)
