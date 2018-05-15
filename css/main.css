@@ -9,6 +9,8 @@ button {
   margin: 5px 0px 0px 10px !important;
   width: 654px;
 }
+/* Below is Bootstrap4 styling */
+/* http://getbootstrap.com/docs/4.1/layout/overview/ */
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
