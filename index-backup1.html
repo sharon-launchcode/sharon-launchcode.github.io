@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+     <!-- source for script https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document -->
+   <!--[if lt IE 9]>
+  <script>
+    document.createElement("header" );
+    document.createElement("footer" );
+    document.createElement("section"); 
+    document.createElement("aside"  );
+    document.createElement("nav"    );
+    document.createElement("article"); 
+    document.createElement("hgroup" ); 
+    document.createElement("time"   );
+  </script>
+  <noscript>
+     <strong>Warning !</strong>
+     Because your browser does not support HTML5, some elements are created using JavaScript.
+     Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+  </noscript>
+<![endif]-->
+<head>
+  <title>Hackathon Project | Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ </head>
+</head>     
+  <body onload="showMyFace()">
+    <video id="yourVideo" autoplay muted playsinline></video>
+    <video id="friendsVideo" autoplay playsinline></video>
+    <br />
+    <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="js/script.js"></script>
+       
+
+  </body>
+<!-- instructions from firebase: Add firebase to webapp 
+Copy and paste the snippet below at the bottom of your HTML, before other script tags --> 
+
+<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
+    authDomain: "hackathon-video-chat.firebaseapp.com",
+    databaseURL: "https://hackathon-video-chat.firebaseio.com",
+    projectId: "hackathon-video-chat",
+    storageBucket: "hackathon-video-chat.appspot.com",
+    messagingSenderId: "633008113206"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>
