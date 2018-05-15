@@ -26,6 +26,7 @@
  </head>
 </head>     
   <body onload="showMyFace()">
+       <div class="container">
     <video id="yourVideo" autoplay muted playsinline></video>
     <video id="friendsVideo" autoplay playsinline></video>
     <br />
@@ -33,7 +34,18 @@
     <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
     <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
     <script src="js/script.js"></script>
-       
+       </div><!-- container for videos -->
+       <div class="container">
+            <button onclick="uploadFunction()">Upload</button>
+
+               <script>
+               function uploadFunction() {
+                   var x = document.createElement("INPUT");
+                   x.setAttribute("type", "file");
+                   document.body.appendChild(x);
+               }
+               </script>
+       </div><!-- container for upload documents -->     
 
   </body>
 <!-- instructions from firebase: Add firebase to webapp 
