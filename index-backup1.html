@@ -26,13 +26,33 @@
  </head>
 </head>     
   <body onload="showMyFace()">
-    <video id="yourVideo" autoplay muted playsinline></video>
-    <video id="friendsVideo" autoplay playsinline></video>
-    <br />
-    <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-    <script src="js/script.js"></script>
-       
+       <div class="container">       
+           <iframe
+              width="350"
+              height="430"
+              src="https://console.dialogflow.com/api-client/demo/embedded/2826f62d-5973-4ab8-b5c8-84a4d026e807">
+          </iframe>
+       </div>
+         <div class="container">
+         <video id="yourVideo" autoplay muted playsinline></video>
+         <video id="friendsVideo" autoplay playsinline></video>
+         <br />
+         <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+         <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
+         <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+         <script src="js/script.js"></script>
+            </div><!-- container for videos -->
+            <div class="container">
+                 <button onclick="uploadFunction()">Upload</button>
+
+                    <script>
+                         function uploadFunction() {
+                             var uploadfile = document.createElement("INPUT");
+                             uploadfile.setAttribute("type", "file");
+                             document.body.appendChild(uploadfile);
+                         }
+                    </script>
+            </div><!-- container for upload documents -->     
 
   </body>
 <!-- instructions from firebase: Add firebase to webapp 
