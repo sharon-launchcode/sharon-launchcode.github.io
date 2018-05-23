@@ -1,0 +1,44 @@
+[
+  {
+    "id": "9bd310f5-d960-4479-a5e4-7c396c8d5a18",
+    "data": [
+      {
+        "text": "4",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527026127
+  },
+  {
+    "id": "c69d372f-cb56-4d80-894c-4c37fa02a5c6",
+    "data": [
+      {
+        "text": "I need help with ",
+        "userDefined": false
+      },
+      {
+        "text": "Medicaid",
+        "alias": "Florida",
+        "meta": "@Florida",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1527026127
+  },
+  {
+    "id": "363ac26c-bc1f-4c36-98ee-77b4243084ae",
+    "data": [
+      {
+        "text": "Medicaid",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527026127
+  }
+]

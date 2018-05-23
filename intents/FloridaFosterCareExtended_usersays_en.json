@@ -1,0 +1,128 @@
+[
+  {
+    "id": "97410d36-09d2-42c1-86ec-8165d79f9d70",
+    "data": [
+      {
+        "text": "extend ",
+        "userDefined": false
+      },
+      {
+        "text": "foster care",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527029413
+  },
+  {
+    "id": "667b2312-b5d3-41d3-9f38-e4cf9aefbb47",
+    "data": [
+      {
+        "text": "I want to extend my ",
+        "userDefined": false
+      },
+      {
+        "text": "foster care",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": false
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Florida",
+        "alias": "Florida",
+        "meta": "@Florida",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527029413
+  },
+  {
+    "id": "85b504e5-6f37-463d-b216-2661d8c2032d",
+    "data": [
+      {
+        "text": "Can I extend the time in ",
+        "userDefined": false
+      },
+      {
+        "text": "foster care",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527029413
+  },
+  {
+    "id": "87819ccd-1896-422a-8c77-ec3b79e41e9a",
+    "data": [
+      {
+        "text": "I want ",
+        "userDefined": false
+      },
+      {
+        "text": "extended foster care",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527029413
+  },
+  {
+    "id": "b61c7990-adaa-461b-8837-93ffb612f59a",
+    "data": [
+      {
+        "text": "I want to stay in ",
+        "userDefined": false
+      },
+      {
+        "text": "foster care",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": true
+      },
+      {
+        "text": " longer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527029413
+  },
+  {
+    "id": "f5cba0de-5063-4cea-9da0-12c44f03ce2c",
+    "data": [
+      {
+        "text": "I want to extend my time in ",
+        "userDefined": false
+      },
+      {
+        "text": "foster care",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527029413
+  }
+]

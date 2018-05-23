@@ -1,0 +1,81 @@
+{
+  "id": "faf9ba68-442d-4bb6-9ab1-201e662b305f",
+  "name": "FloridaFosterCareMedicaid",
+  "auto": true,
+  "contexts": [
+    "DefalutWelcomIntent-florida",
+    "DefaultWelcomeIntent-florida-yes",
+    "DefaultWelcomeIntent-followup",
+    "DefaultWelcomeIntent-florida-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-florida.DefaultWelcomeIntent-florida-yes",
+      "affectedContexts": [
+        {
+          "name": "DefalutWelcomIntent-florida",
+          "parameters": {},
+          "lifespan": 1
+        },
+        {
+          "name": "DefaultWelcomeIntent-florida-yes",
+          "parameters": {},
+          "lifespan": 1
+        },
+        {
+          "name": "FloridaFosterCareMedicaid-followup",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "DefaultWelcomeIntent-followup",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "DefaultWelcomeIntent-florida-followup",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "ca2d99f5-c249-47c6-93e8-7767e3bc2ce9",
+          "required": false,
+          "dataType": "@Florida",
+          "name": "Florida",
+          "value": "$Florida",
+          "isList": false
+        },
+        {
+          "id": "04a39b0a-a013-4296-8ca7-1ec4235d3aa8",
+          "required": false,
+          "dataType": "@Florida",
+          "name": "Medicaid",
+          "value": "$Medicaid",
+          "prompts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "If you are leaving foster care, the criteria for Medicaid is really largely age-dependent.   Are you between the ages of 18 and 26?   (That means you can be 18 years old)"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527026127,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "FloridaFosterCareMedicaid"
+    }
+  ]
+}

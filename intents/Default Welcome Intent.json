@@ -1,0 +1,53 @@
+{
+  "id": "f5c8b5e0-0aad-46c6-8ca8-4b9956e24381",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [
+        {
+          "name": "DefaultWelcomeIntent-followup-2",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "5c4f50ba-76be-4159-8103-ef88627a61d9",
+          "required": false,
+          "dataType": "@Florida",
+          "name": "florida",
+          "value": "$florida",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Hi!  We\u0027re here to help!  Help is available by state law.  Which state do you live in?",
+            "Hello!  How can I help you today? Help is available by state law.  Which state do you live in?",
+            "Good day!  How can I help you today? Help is available by state law.  Which state do you live in?",
+            "Greetings!  How can I help you today? Help is available by state law.  Which state do you live in?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527033884,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "defaultwelcomeintent"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "5455e1d3-c597-4d68-9279-047ce112a6ee",
+  "parentId": "f5c8b5e0-0aad-46c6-8ca8-4b9956e24381",
+  "rootParentId": "f5c8b5e0-0aad-46c6-8ca8-4b9956e24381",
+  "name": "Default Welcome Intent - tennessee",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-custom",
+      "affectedContexts": [
+        {
+          "name": "DefaultWelcomeIntent-tennessee-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "d9e23da5-0ee6-44c7-962d-9e04926d202d",
+          "required": false,
+          "dataType": "@Tennessee",
+          "name": "Tennesse",
+          "value": "$Tennesse",
+          "isList": false
+        },
+        {
+          "id": "b414c908-7409-4a0a-b5df-46413bb47f8d",
+          "required": false,
+          "dataType": "@Tennessee",
+          "name": "Tennessee",
+          "value": "$Tennessee",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "I see you are a resident of Tennessee!  Legal Services Corporation can help.   You\u0027re in one of four regions.  Type in the name of your county.    For reference, check this page!  https://www.lsc.gov/tennessee."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527037977,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "DefaultWelcomeIntentTennessee"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "c0ee7ea1-3f6b-4a8c-ba6c-00c594bb7d38",
+  "name": "FloridaFosterCareTuition",
+  "auto": true,
+  "contexts": [
+    "DefalutWelcomIntent-florida",
+    "DefaultWelcomeIntent-florida-yes"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "DefalutWelcomIntent-florida",
+          "parameters": {},
+          "lifespan": 1
+        },
+        {
+          "name": "DefaultWelcomeIntent-florida-yes",
+          "parameters": {},
+          "lifespan": 1
+        },
+        {
+          "name": "FloridaFosterCareTuition",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "id": "2740db23-b70c-4be1-acf9-e5755023e71a",
+          "dataType": "@FloridaFosterCare",
+          "name": "FloridaFosterCare",
+          "value": "$FloridaFosterCare",
+          "isList": false
+        },
+        {
+          "id": "b351442b-4e14-46b6-aa6c-1fbbbf574556",
+          "dataType": "@FloridaFosterCare",
+          "name": "tuition",
+          "value": "$FloridaFosterCare-tuition"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Okay, you are a Florida resident, who has been in foster care, that is looking for tuition assistance.   Are you currently under a Guardianship, living with a relative or non-relative, adopted, or none of the above?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527031842,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "FloridaFosterCareTuition"
+    }
+  ]
+}

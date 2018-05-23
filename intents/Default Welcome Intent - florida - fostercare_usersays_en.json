@@ -1,0 +1,24 @@
+[
+  {
+    "id": "d0ff6e4c-cccc-4dce-8d50-0a9d5e0f2eff",
+    "data": [
+      {
+        "text": "I want to know about ",
+        "userDefined": false
+      },
+      {
+        "text": "foster care",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": false
+      },
+      {
+        "text": " benefits",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527034506
+  }
+]

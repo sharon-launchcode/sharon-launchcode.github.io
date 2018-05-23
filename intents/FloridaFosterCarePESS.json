@@ -1,0 +1,40 @@
+{
+  "id": "272ecdf1-ca6a-4710-a3ec-c39b8d6fb791",
+  "name": "FloridaFosterCarePESS",
+  "auto": true,
+  "contexts": [
+    "DefaultWelcomeIntent-florida-yes"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "DefaultWelcomeIntent-florida-yes",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527031319,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "FloridaFosterCarePESS"
+    }
+  ]
+}

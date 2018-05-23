@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ab28eb46-87d9-44cd-9257-dafd5705ff30",
+    "data": [
+      {
+        "text": "I need help with ",
+        "userDefined": false
+      },
+      {
+        "text": "tuition",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": false
+      },
+      {
+        "text": " money",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527031842
+  },
+  {
+    "id": "f80bf0c4-e4a2-44cf-9128-136361f1194c",
+    "data": [
+      {
+        "text": "I am looking for ",
+        "userDefined": false
+      },
+      {
+        "text": "tuition",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": false
+      },
+      {
+        "text": " exemption",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527031842
+  },
+  {
+    "id": "bcb40f63-bd66-4bf9-9ee4-b959bffe247b",
+    "data": [
+      {
+        "text": "Can I get help with my ",
+        "userDefined": false
+      },
+      {
+        "text": "tuition",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527031842
+  },
+  {
+    "id": "f1ccc616-f8dc-45cc-b278-dc41c16991d8",
+    "data": [
+      {
+        "text": "I am looking for ",
+        "userDefined": false
+      },
+      {
+        "text": "tuition",
+        "alias": "FloridaFosterCare",
+        "meta": "@FloridaFosterCare",
+        "userDefined": false
+      },
+      {
+        "text": " aid",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527031842
+  }
+]

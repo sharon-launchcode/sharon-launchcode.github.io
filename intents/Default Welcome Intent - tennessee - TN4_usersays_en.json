@@ -1,0 +1,162 @@
+[
+  {
+    "id": "e79683e2-d11d-467f-af7b-0b42700d7979",
+    "data": [
+      {
+        "text": "Tipton",
+        "alias": "Tipton",
+        "meta": "@TennesseeLSC",
+        "userDefined": true
+      },
+      {
+        "text": " County",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  },
+  {
+    "id": "1be3e58f-616c-4430-ae7f-b65632fc4669",
+    "data": [
+      {
+        "text": "Tipton",
+        "alias": "Tipton",
+        "meta": "@TennesseeLSC",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  },
+  {
+    "id": "61ef587d-8798-41bd-82a2-cdac3f43d7f2",
+    "data": [
+      {
+        "text": "Shelby County",
+        "alias": "TennesseeLSC",
+        "meta": "@TennesseeLSC",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  },
+  {
+    "id": "e1c0fd72-5d5a-4a03-92ce-bea68487b804",
+    "data": [
+      {
+        "text": "Shelby",
+        "alias": "Shelby",
+        "meta": "@TennesseeLSC",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  },
+  {
+    "id": "40a604b7-318a-446f-aad4-9ccc9040db5e",
+    "data": [
+      {
+        "text": "Lauderdale County",
+        "alias": "TennesseeLSC",
+        "meta": "@TennesseeLSC",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  },
+  {
+    "id": "1f6ca276-9a04-47a6-a1ba-3a23cc9dbcb1",
+    "data": [
+      {
+        "text": "Lauderdale",
+        "alias": "Lauderdale",
+        "meta": "@TennesseeLSC",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  },
+  {
+    "id": "7d91e2a4-3204-4e2e-9131-786172d72c8d",
+    "data": [
+      {
+        "text": "Fayette",
+        "alias": "Fayette",
+        "meta": "@TennesseeLSC",
+        "userDefined": true
+      },
+      {
+        "text": " County",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  },
+  {
+    "id": "7b3ef3d1-8c68-4a1c-99f9-6c804e60f4ac",
+    "data": [
+      {
+        "text": "Fayette",
+        "alias": "Fayette",
+        "meta": "@TennesseeLSC",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  },
+  {
+    "id": "fd07f182-eae1-48d2-97ab-2185cfdc4b7e",
+    "data": [
+      {
+        "text": "TN4",
+        "alias": "TennesseeLSC",
+        "meta": "@TennesseeLSC",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  },
+  {
+    "id": "c4233e5e-d7ea-42d7-9cf1-2a66eeadeb74",
+    "data": [
+      {
+        "text": "TN-4",
+        "alias": "TennesseeLSC",
+        "meta": "@TennesseeLSC",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  },
+  {
+    "id": "2748610e-c213-4e5b-8356-394d0f6e6f47",
+    "data": [
+      {
+        "text": "Fayette County, Lauderdale County, Shelby County, Tipton County",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527038668
+  }
+]

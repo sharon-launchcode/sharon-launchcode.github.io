@@ -1,0 +1,69 @@
+{
+  "id": "ab833639-e989-456a-8455-81cf7b992936",
+  "name": "FloridaFosterCareExtended",
+  "auto": true,
+  "contexts": [
+    "DefaultWelcomeIntent-florida-yes",
+    "DefaultWelcomeIntent-florida-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "DefaultWelcomeIntent-florida-yes",
+          "parameters": {},
+          "lifespan": 1
+        },
+        {
+          "name": "DefaultWelcomeIntent-florida-followup",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "id": "98815468-1965-4a28-b191-2d8537a3a2a1",
+          "required": false,
+          "dataType": "@FloridaFosterCare",
+          "name": "FloridaFosterCare",
+          "value": "$FloridaFosterCare",
+          "isList": false
+        },
+        {
+          "id": "f98c693f-d7e4-4c6f-843b-414dd1953fce",
+          "required": false,
+          "dataType": "@Florida",
+          "name": "Florida",
+          "value": "$Florida",
+          "isList": false
+        },
+        {
+          "id": "1524bff0-f4ea-4f85-8e1f-51375d9d0459",
+          "dataType": "@FloridaFosterCare",
+          "name": "FloridaFosterCareExtended",
+          "value": "#FloridaFosterCareExtended"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Okay, I see that you want to extend your foster care. Do you have a disability?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527029413,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "FloridaFosterCareExtended"
+    }
+  ]
+}

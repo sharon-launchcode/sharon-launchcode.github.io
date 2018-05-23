@@ -1,0 +1,48 @@
+{
+  "id": "a40e3a4d-1b32-4575-8aa5-9f64fd56e0ae",
+  "parentId": "b8258f25-323e-4f3e-98d2-f66815256286",
+  "rootParentId": "f5c8b5e0-0aad-46c6-8ca8-4b9956e24381",
+  "name": "Default Welcome Intent - florida - fostercare",
+  "auto": true,
+  "contexts": [
+    "DefaultWelcomeIntent-florida-followup-2",
+    "defaultwelcomeintent-florida-fostercare"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-custom.DefaultWelcomeIntent-florida-custom",
+      "affectedContexts": [
+        {
+          "name": "defaultwelcomeintent-florida-fostercare",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "9ea52961-f26b-4b0f-aa5e-f1bcd2474652",
+          "dataType": "@FloridaFosterCare",
+          "name": "FloridaFosterCare",
+          "value": "$FloridaFosterCare",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "we can help you"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527034506,
+  "fallbackIntent": false,
+  "events": []
+}
