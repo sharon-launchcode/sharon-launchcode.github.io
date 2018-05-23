@@ -8,6 +8,8 @@
 
 ## Project Idea | Kimi deMent
 ##### https://www.legalaidhackathon.org/blog/remote-virtual-legal-clinic?categoryId=47390
+### Team Developers: Kimi deMent | Sharon Austin
+
 
 ```I am interested in building a remote connectivity platform (such as an app) that can be used to set up remote/virtual legal clinics specifically designed to service rural areas that LSC funded organizations could overlay into their existing intake/screenings, and non LSC funded organizations could also utilize. It would theoretically be set up so that the user would access either a web platform or app and would be guided through a series of plain-language questions on income, eligibility, etc.```
 
@@ -24,7 +26,7 @@
 
 ## Project Idea | Jessica Rae
 ##### https://trello.com/c/eWme4aF4/149-description
-### Team Developers: Abhijeet Chavan | Brian Stewart | Jessica Rae | Jack Haycock | Joseph Schieffer | Sam Harden | Leon
+### Team Developers: Abhijeet Chavan | Brian Stewart | Jessica Rae | Jack Haycock | Joseph Schieffer | Sam Harden | Leon | Sharon Austin
 
 ```Every year, approximately 20,000 youth age-out of the foster care system throughout the U.S. The statistics on how youth fair after they leave foster care are grim. Compared to their peers, youth who age-out of foster care without being connected to caring and committed adults are less likely to complete their education and obtain employment that pays a living wage. They are at greater risk of homelessness, incarceration, becoming parents early and having their own children involved in the foster care system. Many are left to deal with the trauma they experienced at home or in the foster care system without adequate access to medical and mental health care.```
 
