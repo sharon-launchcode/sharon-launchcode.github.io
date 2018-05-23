@@ -2,7 +2,8 @@
 ## Created for Legal-Aid Hackathon 2018
 #### https://www.legalaidhackathon.org/
 
-
+## IMPORTANT! THIS PLATFORM WAS CREATED FOR PROOF OF CONCEPT PURPOSES ONLY.   
+### NO LEGAL ADVICE IS AVAILABLE THIS PLATFORM, OR ITS CONTENT.
 
 ## Project Idea | Kimi deMent
 ##### https://www.legalaidhackathon.org/blog/remote-virtual-legal-clinic?categoryId=47390
