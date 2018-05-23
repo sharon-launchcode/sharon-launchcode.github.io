@@ -1,0 +1,54 @@
+[
+  {
+    "value": "Foster Care",
+    "synonyms": [
+      "Foster Care",
+      "foster care",
+      "extended foster care",
+      "extensions"
+    ]
+  },
+  {
+    "value": "adopted",
+    "synonyms": [
+      "adopted",
+      "adoption"
+    ]
+  },
+  {
+    "value": "PESS",
+    "synonyms": [
+      "PESS",
+      "pess"
+    ]
+  },
+  {
+    "value": "Medicaid",
+    "synonyms": [
+      "Medicaid",
+      "medicaid"
+    ]
+  },
+  {
+    "value": "Tuition",
+    "synonyms": [
+      "Tuition",
+      "tuition",
+      "tuition assistance"
+    ]
+  },
+  {
+    "value": "guardianship",
+    "synonyms": [
+      "guardianship"
+    ]
+  },
+  {
+    "value": "disability",
+    "synonyms": [
+      "disability",
+      "disabled",
+      "disabilities"
+    ]
+  }
+]
