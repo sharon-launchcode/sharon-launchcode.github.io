@@ -39,7 +39,7 @@
 
 
 ### About the Source Code:
-#### The code foundations of this project were based on the tutorials provided by the following sources, with gratitude towards the authors
+#### Significant portions of the code used in this project were based on the tutorials provided by the following sources, with gratitude towards the authors:
 
 ##### HTML DOM Input FileUpload Object
 ##### https://www.w3schools.com/jsref/dom_obj_fileupload.asp
