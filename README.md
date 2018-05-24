@@ -1,8 +1,7 @@
 # Virtual Clinic Prototype
 #### A Project Based on Insights from the Legal-Aid Hackathon 2018 | https://www.legalaidhackathon.org/
 
-## IMPORTANT! 
-## THIS PLATFORM WAS CREATED FOR PROOF OF CONCEPT PURPOSES ONLY.   
+## IMPORTANT!! THIS PLATFORM IS FOR PROOF OF CONCEPT PURPOSES ONLY.   
 ## THIS PLATFORM IS NOT TO BE USED FOR ANY LEGAL PURPOSE.
 
 #### This Virtual Legal Clinic Prototype really arose as a result from working with two teams in the May 2018 Legal Aid Hackathon.  Both of these amazing teams were two of the *many* amazing teams who wanted to use technology to reach those who needed legal assistance.  
