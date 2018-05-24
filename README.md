@@ -1,12 +1,11 @@
 # Virtual Clinic Prototype
-## Created for Legal-Aid Hackathon 2018
-#### https://www.legalaidhackathon.org/
+#### A Project Based on Insights from the Legal-Aid Hackathon 2018 | https://www.legalaidhackathon.org/
 
 ## IMPORTANT! 
 ## THIS PLATFORM WAS CREATED FOR PROOF OF CONCEPT PURPOSES ONLY.   
 ## THIS PLATFORM IS NOT TO BE USED FOR ANY LEGAL PURPOSE.
 
-#### This Virtual Legal Clinic Prototype really arose from working with two teams in the May 2018 Legal Aid Hackathon.Both teams wanted to be able to use technology to reach those who needed legal assistance.  I was so impressed with the committment of all to try to fix the problems they saw before them.  I would have been proud to work on any of the teams in the Hackathon; each and every one of them was doing great things.
+#### This Virtual Legal Clinic Prototype really arose as a result from working with two teams in the May 2018 Legal Aid Hackathon.  Both of these amazing teams were two of the *many* amazing teams who wanted to use technology to reach those who needed legal assistance.  
 
 ### Special Thanks to: 
 ### Abhijeet Chavan | Joseph Schieffer | Sam Harden | Brian Stewart | Jack Haycock | Jessica Rae | Kimi deMent | 
