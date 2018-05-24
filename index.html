@@ -81,13 +81,17 @@
                       
                  </div>     
                  <div class="col-md-8"><!-- intake form -->
+                      <h3>Client Information</h3>
                     <form autocomplete="off" action="/">
+                         <div>Name</div>
+                         <div>Email</div>
+                         <div>Phone</div>
                       <div class="autocomplete" style="width:300px;">
                         <input id="myState" type="text" name="myState" placeholder="State">
-                      </div>
+                      </div><br />
                          
-                      <!-- <input type="submit">  -->
-                    <!-- </form> -->
+                      <input type="submit">
+                    </form>
                      
               <script>
                function autocomplete(inp, arr) {
@@ -196,9 +200,6 @@
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
                </script>
-
-                      <input type="submit">
-                    </form>
                  </div>      
             </div><!-- container for intake form -->
        </div><!-- row for intake form -->
