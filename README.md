@@ -43,8 +43,17 @@
 ### About the Source Code:
 #### Significant portions of the code used in this project were based on the tutorials provided by the following sources, with gratitude towards the authors:
 
+### W3C SChools
+#### https://www.w3schools.com/default.asp
+
+##### How To - Autocomplete
+##### https://www.w3schools.com/howto/howto_js_autocomplete.asp
+
 ##### HTML DOM Input FileUpload Object
 ##### https://www.w3schools.com/jsref/dom_obj_fileupload.asp
+
+### Website Beaver
+#### https://websitebeaver.com
 
 ##### WebRTC code based on the tutorial by David Marcus | https://websitebeaver.com/insanely-simple-webrtc-video-chat-using-firebase-with-codepen-demo#explanation-of-codepen-demo
 
