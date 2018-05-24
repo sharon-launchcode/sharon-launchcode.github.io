@@ -54,48 +54,67 @@
        <div class="row" style="margin-top:50px;">
             <div class="container">
                  <div class="col-md-4"><!-- upload -->                 
-                  
-                 <button onclick="uploadFunction()">Upload</button>
+                <!-- version one    
+                 <button onclick="uploadFunction()" style="width:50px;">Upload</button>
                     <script>
                          function uploadFunction() {
                              var uploadfile = document.createElement("INPUT");
                              uploadfile.setAttribute("type", "file");
                              document.body.appendChild(uploadfile);
                          }
-                    </script>                    
+                    </script> 
+                     --->
+                      <!-- version 2 -->
+               <form enctype="multipart/form-data" action="" method="post">
+                   <p>Upload file(s)</p>
+                   <div id="files">
+                       <p><input type="file" name="uploaded_file[]" /></p>
+                   </div>
+                   <p><input type="button" value="Add File" onclick="addFile();" /></p>
+               </form>
                       
+                      <script>
+                      var fileId = 0; // used by the addFile() function to keep track of IDs
+                      function addFile() {
+                        fileId++; // increment fileId to get a unique ID for the new element
+                        var html = '<input type="file" name="uploaded_files[]" /> ' +
+                                   '<a href="" onclick="javascript:removeElement('file-' + fileId + ''); return false;">Remove</a>';
+                        addElement('files', 'p', 'file-' + fileId, html);
+                    }
+                      </script>                      
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
-                      <h3>Proof of Concept Form</h3>
-                      <h4>Important!  This is not for legal use</h4><br />
-                      
+                      <div style="text-align:center;">
+                         <header><h3>Proof of Concept Intake Form</h3></header>
+                         <h4>Important!  This is not for legal use</h4><br />
+                      </div>
                     <form autocomplete="off" action="/" style="margin-left:30px;">
                 
-                         <label for="date">Date:</label> 
+                         <label for="date">Date:</label><br /> 
                          <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
                          
                            <div class="autocomplete">
-                            <label for="myState">State of Residence:</label>
-                            <input id="myState" type="text" name="myState">
+                            <label for="myState">State of Residence:</label><br /> 
+                            <input id="myState" type="text" name="myState"><br /> 
                            </div><br />
 
-                         <label for="name">Your Name:</label> 
+                         <label for="name">Your Name:</label><br />  
                          <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />                                                                              
 
-                         <label for="email">Email:</label> 
+                         <label for="email">Email:</label><br />  
                          <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
                          
-                         <label for="phone">Contact Phone:</label> 
+                         <label for="phone">Contact Phone:</label><br />  
                          <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
-                         <label for="age">Age:</label>
+                         <label for="age">Age:</label><br /> 
                          <input id="age" type="number" mozactionhint="next"><br />
                          
-                         <label for="income">Monthly Income:</label>
+                         <label for="income">Monthly Income:</label><br />
                          <input id="income" type="number" mozactionhint="next"><br />
                          
-                         
+                        
                       <input type="submit">
                     </form>
                      
