@@ -37,39 +37,70 @@
               src="https://console.dialogflow.com/api-client/demo/embedded/2826f62d-5973-4ab8-b5c8-84a4d026e807">
           </iframe>
             </div><!-- col md 6 -->       
-         <div class="col-md-8">
-         <h1>Proof of Concept: Virtual Legal Clinic</h1><br />
-         <video id="yourVideo" autoplay muted playsinline></video>
-         <video id="friendsVideo" autoplay playsinline></video>
-         <br />
-         <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
-         <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
-         <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
-         <script src="js/script.js"></script>
-
-                 <button onclick="uploadFunction()">Upload</button>
+              <div class="col-md-8">
+                   <h1>Proof of Concept: Virtual Legal Clinic</h1><br />
+                   <video id="yourVideo" autoplay muted playsinline></video>
+                   <video id="friendsVideo" autoplay playsinline></video>
+                   <br />
+                   <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+                   <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
+                   <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+                   <script src="js/script.js"></script>
+                </div><!-- col-md  6 -->
+            </div><!-- container -->  
+       </div><!-- row -->
+       
+       
+       <div class="row" style="margin-top:50px;">
+            <div class="container">
+                 <div class="col-md-4"><!-- upload -->                 
+                  
+                 <button onclick="uploadFunction()" style="width:50px;">Upload</button>
                     <script>
                          function uploadFunction() {
                              var uploadfile = document.createElement("INPUT");
                              uploadfile.setAttribute("type", "file");
                              document.body.appendChild(uploadfile);
                          }
-                    </script>
-                </div><!-- col-md  6 -->
-            </div><!-- container -->  
-       </div><!-- row -->
-       <div class="row" style="margin-top:50px;"><!-- intake form -->
-            <div class="container"><!-- intake form -->
-                 <div class="col-md-12">
-                    <form autocomplete="off" action="/">
-                      <div class="autocomplete" style="width:300px;">
-                        <input id="myState" type="text" name="myState" placeholder="State">
+                    </script>                    
+                      
+                 </div><!-- col md-4 for uploading documents -->
+                 
+                 <div class="col-md-8"><!-- intake form -->
+                      <div style="text-align:center;">
+                         <header><h3>Proof of Concept Form</h3></header>
+                         <h4>Important!  This is not for legal use</h4><br />
                       </div>
+                    <form autocomplete="off" action="/" style="margin-left:30px;">
+                
+                         <label for="date">Date:</label><br /> 
+                         <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
+                         
+                           <div class="autocomplete">
+                            <label for="myState">State of Residence:</label><br /> 
+                            <input id="myState" type="text" name="myState"><br /> 
+                           </div><br />
+
+                         <label for="name">Your Name:</label><br />  
+                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />                                                                              
+
+                         <label for="email">Email:</label><br />  
+                         <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+                         
+                         <label for="phone">Contact Phone:</label><br />  
+                         <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+
+                         <label for="age">Age:</label><br /> 
+                         <input id="age" type="number" mozactionhint="next"><br />
+                         
+                         <label for="income">Monthly Income:</label>
+                         <input id="income" type="number" mozactionhint="next"><br />
+                         
                          
                       <input type="submit">
                     </form>
-                      ////
-                                     <script>
+                     
+              <script>
                function autocomplete(inp, arr) {
                  /*the autocomplete function takes two arguments,
                  the text field element and an array of possible autocompleted values:*/
@@ -168,7 +199,6 @@
                }
 
                /*An array containing the 50 states:*/
-
                                          
           var states = ["Alabama","Alaska","Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia","Hawaii", "Idaho", "Illinois","Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland","Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon","Pennsylvania","Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont","Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"];
 
@@ -177,10 +207,6 @@
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
                </script>
-
-                      
-                      
-                     ///// 
                  </div>      
             </div><!-- container for intake form -->
        </div><!-- row for intake form -->
