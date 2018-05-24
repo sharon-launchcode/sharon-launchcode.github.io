@@ -19,26 +19,25 @@
   </noscript>
 <![endif]-->
 <head>
-  <title>Hackathon Project | Home Page</title>
+  <title>Proof of Concept | Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
  </head>
 </head>     
   <body onload="showMyFace()">
+
+       <div class="row">
        <div class="container">
-            <h1>Proof of Concept for Virtual Clinic</h1>
-            <h2>THIS PAGE IS UNDER CONSTRUCTION</h2>
-       </div>
-       <div class="container">       
+            <div class="col-md-4"><!-- contains chat -->
            <iframe
               width="350"
               height="430"
               src="https://console.dialogflow.com/api-client/demo/embedded/2826f62d-5973-4ab8-b5c8-84a4d026e807">
           </iframe>
-            <h2>IMPORTANT: Under Construction.  Only content applicable to Florida and Tennessee is currently being developed</h2>
-       </div>
-         <div class="container">
+            </div><!-- col md 6 -->       
+         <div class="col-md-8">
+         <h1>Proof of Concept: Virtual Legal Clinic</h1><br />
          <video id="yourVideo" autoplay muted playsinline></video>
          <video id="friendsVideo" autoplay playsinline></video>
          <br />
@@ -46,10 +45,8 @@
          <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
          <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
          <script src="js/script.js"></script>
-            </div><!-- container for videos -->
-            <div class="container">
-                 <button onclick="uploadFunction()">Upload</button>
 
+                 <button onclick="uploadFunction()">Upload</button>
                     <script>
                          function uploadFunction() {
                              var uploadfile = document.createElement("INPUT");
@@ -57,8 +54,9 @@
                              document.body.appendChild(uploadfile);
                          }
                     </script>
-            </div><!-- container for upload documents -->     
-
+                </div><!-- col-md  6 -->
+            </div><!-- container -->  
+       </div><!-- row -->
   </body>
 <!-- instructions from firebase: Add firebase to webapp 
 Copy and paste the snippet below at the bottom of your HTML, before other script tags --> 
