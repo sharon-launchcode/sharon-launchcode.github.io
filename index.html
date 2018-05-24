@@ -52,8 +52,11 @@
                          function uploadFunction() {
                              var uploadfile = document.createElement("INPUT");
                              uploadfile.setAttribute("type", "file");
-                             //document.body.appendChild(uploadfile);
-                             document.div.appendChild(uploadfile);
+                             document.body.appendChild(uploadfile);
+                             var x = document.createElement("P");
+                             var t = document.createTextNode("This is a paragraph.");
+                             x.appendChild(t);
+                             document.body.appendChild(x);
                          }
                     </script>
                 </div><!-- col-md  6 -->
