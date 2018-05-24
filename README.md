@@ -4,12 +4,14 @@
 
 ## IMPORTANT! 
 ## THIS PLATFORM WAS CREATED FOR PROOF OF CONCEPT PURPOSES ONLY.   
-### NO AUTHORITATIVE LEGAL ADVICE IS AVAILABLE VIA THIS PLATFORM, OR IN ITS CONTENT.
+## THIS PLATFORM, NOR ITS CONTENT, ARE TO BE USED FOR ANY LEGAL PURPOSE.
 
-### Special Thanks to: 
-### Abhijeet Chavan | Joseph Schieffer | Sam Harden | Brian Stewart | Jack Haycock | Jessica Rae | Kimi deMent | 
 
-#### This Virtual Legal Clinic Prototype really arose from working with two teams in the May 2018 Legal Aid Hackathon.   #### Both teams wanted to be able to use technology to reach those who needed legal assistance.  I was so impressed with the committment of all to try to fix the problems they saw before them.  I would have been proud to work on any of the teams in the Hackathon; each and every one of them was doing great things.
+
+### This Virtual Legal Clinic Prototype really arose from working with two teams in the May 2018 Legal Aid Hackathon.   #### Both teams wanted to be able to use technology to reach those who needed legal assistance.  I was so impressed with the committment of all to try to fix the problems they saw before them.  I would have been proud to work on any of the teams in the Hackathon; each and every one of them was doing great things.
+
+#### Special Thanks to: 
+#### Abhijeet Chavan | Joseph Schieffer | Sam Harden | Brian Stewart | Jack Haycock | Jessica Rae | Kimi deMent | 
 
 #### Background:
 ##### All teams were doing great things, and in all cases we found that members from one team would reach out to help another.  It so happened that my efforts focued on the work of two teams; Chatbot for Youth Aging Out Of Foster Care, and the Virtual Legal Clinic, as both wanted to use chatbots for outreach.  Below are more details for the two projects, from which the proof-of-concept for this repository rests.
