@@ -47,9 +47,15 @@
 
 
 ### About the Source Code:
-#### Significant portions of the code used in this project were based on the tutorials provided by the following sources, with gratitude towards the authors:
+#### Significant portions of the code used in this project were based on the tutorials provided by the following sources, or work done by individuals, with great gratitude towards the authors:
 
-### W3C SChools
+### A Beautiful Site
+##### https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
+
+### Brian Stewart
+##### http://bdsworks.org
+
+### W3C SChools -- who really have provided me with many lessons beyond the ones I used in this project -- thank you!
 #### https://www.w3schools.com/default.asp
 
 ##### How To - Autocomplete
