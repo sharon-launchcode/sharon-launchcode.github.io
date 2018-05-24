@@ -53,9 +53,8 @@
        
        <div class="row" style="margin-top:50px;">
             <div class="container">
-                 <div class="col-md-4"><!-- upload -->
-                      
-                   <!--    
+                 <div class="col-md-4"><!-- upload -->                 
+                  
                  <button onclick="uploadFunction()">Upload</button>
                     <script>
                          function uploadFunction() {
@@ -63,46 +62,39 @@
                              uploadfile.setAttribute("type", "file");
                              document.body.appendChild(uploadfile);
                          }
-                    </script>
-                      -->
-              <!-- version 2 -->
+                    </script>                    
                       
-                       <button onclick="addFile()">Upload Documents</button>
-                    <script>
-                        var fileId = 0; // used by the addFile() function to keep track of IDs
-                        function addFile() {
-                        fileId++; // increment fileId to get a unique ID for the new element
-                        var html = '<input type="file" name="uploaded_files[]" /> ' +
-                                   '<a href="" onclick="javascript:removeElement('file-' + fileId + ''); return false;">Remove</a>';
-                        addElement('files', 'p', 'file-' + fileId, html);
-                    }
-                    </script>
-                      
-                      
-                 </div>     
+                 </div><!-- col md-4 for uploading documents -->
+                 
                  <div class="col-md-8"><!-- intake form -->
                       <h3>Proof of Concept Form</h3>
                       <h4>Important!  This is not for legal use</h4><br />
                       
                     <form autocomplete="off" action="/">
                 
-                         <label for="item1">Date:</label> 
-                         <input id="item1 type="date" x-moz-errormessage="Please specify a valid date."><br />
-
-                         <label for="item2">Your Name:</label> 
-                         <input id="item2 type="name" x-moz-errormessage="Please specify a name."><br />                                                                              
-
-                         <label for="item8">Email:</label> 
-                         <input id="item8 type="email" x-moz-errormessage="Please specify a valid email address."><br />
-
-
-                         <label for="item9">Monthly Income:</label>
-                         <input id="item9" type="text" mozactionhint="next"><br />
-
+                         <label for="date">Date:</label> 
+                         <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
+                         
                            <div class="autocomplete">
                             <label for="myState">State of Residence:</label>
                             <input id="myState" type="text" name="myState">
                            </div><br />
+
+                         <label for="name">Your Name:</label> 
+                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />                                                                              
+
+                         <label for="email">Email:</label> 
+                         <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+                         
+                         <label for="phone">Contact Phone:</label> 
+                         <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+
+                         <label for="age">Age:</label>
+                         <input id="age" type="number" mozactionhint="next"><br />
+                         
+                         <label for="income">Monthly Income:</label>
+                         <input id="income" type="number" mozactionhint="next"><br />
+                         
                          
                       <input type="submit">
                     </form>
