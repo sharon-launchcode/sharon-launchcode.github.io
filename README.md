@@ -64,6 +64,9 @@
 ##### HTML DOM Input FileUpload Object
 ##### https://www.w3schools.com/jsref/dom_obj_fileupload.asp
 
+##### JavaScript Date Objects
+##### https://www.w3schools.com/js/js_dates.asp
+
 ### Website Beaver
 #### https://websitebeaver.com
 
