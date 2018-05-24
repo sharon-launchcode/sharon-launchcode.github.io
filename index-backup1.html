@@ -37,16 +37,24 @@
               src="https://console.dialogflow.com/api-client/demo/embedded/2826f62d-5973-4ab8-b5c8-84a4d026e807">
           </iframe>
             </div><!-- col md 6 -->       
-         <div class="col-md-8">
-         <h1>Proof of Concept: Virtual Legal Clinic</h1><br />
-         <video id="yourVideo" autoplay muted playsinline></video>
-         <video id="friendsVideo" autoplay playsinline></video>
-         <br />
-         <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
-         <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
-         <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
-         <script src="js/script.js"></script>
-
+              <div class="col-md-8">
+                   <h1>Proof of Concept: Virtual Legal Clinic</h1><br />
+                   <video id="yourVideo" autoplay muted playsinline></video>
+                   <video id="friendsVideo" autoplay playsinline></video>
+                   <br />
+                   <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+                   <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
+                   <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+                   <script src="js/script.js"></script>
+                </div><!-- col-md  6 -->
+            </div><!-- container -->  
+       </div><!-- row -->
+       
+       
+       <div class="row" style="margin-top:50px;">
+            <div class="container">
+                 <div class="col-md-4"><!-- upload -->                 
+                  
                  <button onclick="uploadFunction()">Upload</button>
                     <script>
                          function uploadFunction() {
@@ -54,22 +62,44 @@
                              uploadfile.setAttribute("type", "file");
                              document.body.appendChild(uploadfile);
                          }
-                    </script>
-                </div><!-- col-md  6 -->
-            </div><!-- container -->  
-       </div><!-- row -->
-       <div class="row" style="margin-top:50px;"><!-- intake form -->
-            <div class="container"><!-- intake form -->
-                 <div class="col-md-12">
-                    <form autocomplete="off" action="/">
-                      <div class="autocomplete" style="width:300px;">
-                        <input id="myInput" type="text" name="myCountry" placeholder="Country">
-                      </div>
+                    </script>                    
+                      
+                 </div><!-- col md-4 for uploading documents -->
+                 
+                 <div class="col-md-8"><!-- intake form -->
+                      <h3>Proof of Concept Form</h3>
+                      <h4>Important!  This is not for legal use</h4><br />
+                      
+                    <form autocomplete="off" action="/" style="margin-left:30px;">
+                
+                         <label for="date">Date:</label> 
+                         <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
+                         
+                           <div class="autocomplete">
+                            <label for="myState">State of Residence:</label>
+                            <input id="myState" type="text" name="myState">
+                           </div><br />
+
+                         <label for="name">Your Name:</label> 
+                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />                                                                              
+
+                         <label for="email">Email:</label> 
+                         <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+                         
+                         <label for="phone">Contact Phone:</label> 
+                         <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+
+                         <label for="age">Age:</label>
+                         <input id="age" type="number" mozactionhint="next"><br />
+                         
+                         <label for="income">Monthly Income:</label>
+                         <input id="income" type="number" mozactionhint="next"><br />
+                         
                          
                       <input type="submit">
                     </form>
-                      ////
-                                     <script>
+                     
+              <script>
                function autocomplete(inp, arr) {
                  /*the autocomplete function takes two arguments,
                  the text field element and an array of possible autocompleted values:*/
@@ -167,16 +197,15 @@
                      });
                }
 
-               /*An array containing all the country names in the world:*/
-               var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+               /*An array containing the 50 states:*/
+                                         
+          var states = ["Alabama","Alaska","Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia","Hawaii", "Idaho", "Illinois","Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland","Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon","Pennsylvania","Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont","Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"];
 
-               /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-               autocomplete(document.getElementById("myInput"), countries);
+
+               /*initiate the autocomplete function on the "myInput" now "myState" element, and pass along the countries array as possible autocomplete values:*/
+               /* autocomplete(document.getElementById("myInput"), countries); */
+               autocomplete(document.getElementById("myState"), states);
                </script>
-
-                      
-                      
-                     ///// 
                  </div>      
             </div><!-- container for intake form -->
        </div><!-- row for intake form -->
