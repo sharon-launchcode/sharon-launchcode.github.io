@@ -49,17 +49,22 @@
 ### About the Source Code:
 #### Significant portions of the code used in this project were based on the tutorials provided by the following sources, or work done by individuals, with great gratitude towards the authors:
 
-### A Beautiful Site
-##### https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
+
 
 ### Brian Stewart
 ##### http://bdsworks.org
+
+### Cory LaViska | A Beautiful Site
+##### https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
+
+### Karthik Kamalakannankarthik | Discourse
+##### https://discourse.skcript.com/t/how-do-i-create-a-contact-form-using-firebase-as-backend/392
 
 ### MDN
 ##### Accessibility Note: opacity is used to hide the file input instead of visibility: hidden or display: none, because assistive technology interprets the latter two styles to mean the file input isn't interactive. 
 ##### https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
 
-### W3C SChools -- who really have provided me with many lessons beyond the ones I used in this project -- thank you!
+### W3C SChools -- who really have provided me with many lessons beyond the ones I used in this project -- you ROCK!
 #### https://www.w3schools.com/default.asp
 
 ##### How To - Autocomplete
