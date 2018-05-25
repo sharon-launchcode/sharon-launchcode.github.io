@@ -272,7 +272,7 @@
 </script>
  -->    
      
-     ////third attempt
+     ////fourth attempt
      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
      <script>
 $(document).ready(function() {
@@ -291,6 +291,8 @@ function contactScript(value) {
     messagingSenderId: "51123204676" };
     firebase.initializeApp(a);
    var database = firebase.database();
+    var c = document.getElementById('name');
+    var d = document.getElementById('email');
     var b = firebase.database().ref("messages");
         $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
         var c = $("#name").val(),
@@ -301,5 +303,5 @@ function contactScript(value) {
             $(".sucess-none").css("display", "none") }), !1 })   
 }
 </script>
-     ////end third attempt
+     ////end fourth attempt
 </html>
