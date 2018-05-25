@@ -64,6 +64,7 @@
 
 ##### How To - Autocomplete
 ##### https://www.w3schools.com/howto/howto_js_autocomplete.asp
+##### Note: The CSS involved with these instructions set up for use of arrow keys, good for accessibility
 
 ##### HTML DOM Input FileUpload Object
 ##### https://www.w3schools.com/jsref/dom_obj_fileupload.asp
