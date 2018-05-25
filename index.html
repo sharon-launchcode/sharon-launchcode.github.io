@@ -95,7 +95,7 @@
                          <form id="newContact" autocomplete="off">
                          
                               <label for="name">Your Name:</label><br />  
-                              <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
+                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
                                 <div class="autocomplete">
                                  <label for="myState">State of Residence:</label><br /> 
@@ -106,13 +106,13 @@
                               <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
                               <label for="email">Email:</label><br />  
-                              <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+                              <input name="email" id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
 
                               <label for="phone">Contact Phone:</label><br />  
-                              <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+                              <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
                             <div style="margin-top:25px;"><!-- submit button wrapper --> 
-                              <input type="submit">
+                                <input type="submit" class="btn" value="Submit" name="submit" id="submitInitial">
                             <!-- submit button wrapper -->     
                          </form>
                       </div><!-- form wrapper-->   
