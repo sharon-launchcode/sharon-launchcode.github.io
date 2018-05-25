@@ -271,7 +271,7 @@
   var database = firebase.database();
 </script>
  -->    
-  ////fifth attempt
+  ////sixth attempt
      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
      <script>
 $(document).ready(function() {
@@ -295,12 +295,12 @@ function contactScript() {
     var b = firebase.database().ref("messages");
         $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
         var c = $("#name").val(),
-            d = $("#email").val(),
+        var d = $("#email").val(),
             f = { name: c, email: d};
         return b.push(f).then(function(a) { 
             $(".sucess").css("display", "block"), 
             $(".sucess-none").css("display", "none") }), !1 })   
 }
 </script>
-    ////end fifth attempt
+    ////end sixth attempt
 </html>
