@@ -229,10 +229,10 @@
   </body>
 <!-- instructions from firebase: Add firebase to webapp 
 Copy and paste the snippet below at the bottom of your HTML, before other script tags --> 
-
-<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script> -->
 <script>
-  // Initialize Firebase
+  // Initialize Firebase for Video
   var config = {
     apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
     authDomain: "hackathon-video-chat.firebaseapp.com",
@@ -240,6 +240,20 @@ Copy and paste the snippet below at the bottom of your HTML, before other script
     projectId: "hackathon-video-chat",
     storageBucket: "hackathon-video-chat.appspot.com",
     messagingSenderId: "633008113206"
+  };
+  firebase.initializeApp(config);
+</script>
+       
+
+<script>
+  // Initialize Firebase for Initial Intake Form
+  var config = {
+    apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
+    authDomain: "initialintakeform.firebaseapp.com",
+    databaseURL: "https://initialintakeform.firebaseio.com",
+    projectId: "initialintakeform",
+    storageBucket: "initialintakeform.appspot.com",
+    messagingSenderId: "51123204676"
   };
   firebase.initializeApp(config);
 </script>
