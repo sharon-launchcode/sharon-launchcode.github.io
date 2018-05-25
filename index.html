@@ -64,24 +64,13 @@
                     </script> 
                      --->
                       <!-- version 2 -->
-               <form enctype="multipart/form-data" action="" method="post">
-                   <p>Upload file(s)</p>
-                   <div id="files">
-                       <p><input type="file" name="uploaded_file[]" /></p>
-                   </div>
-                   <p><input type="button" value="Add File" onclick="addFile();" /></p>
-               </form>
-                      <!--
-                      <script>
-                      var fileId = 0; // used by the addFile() function to keep track of IDs
-                      function addFile() {
-                        fileId++; // increment fileId to get a unique ID for the new element
-                        var html = '<input type="file" name="uploaded_files[]" /> ' +
-                                   '<a href="" onclick="javascript:removeElement('file-' + fileId + ''); return false;">Remove</a>';
-                        addElement('files', 'p', 'file-' + fileId, html);
-                    }
-                      </script>  
--->
+                     <form enctype="multipart/form-data" action="" method="post">
+                         <p>Upload file(s)</p>
+                         <div id="files">
+                             <p><input type="file" name="uploaded_file[]" /></p>
+                         </div>
+                     </form>
+                      
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
