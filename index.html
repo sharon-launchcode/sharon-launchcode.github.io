@@ -223,12 +223,11 @@
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
                </script>
-                 </div><!-- col md 8 for intake form -->      
+                 </div><!-- col md 8 for initial intake form -->      
             </div><!-- container for intake form -->
        </div><!-- row for intake form -->
   </body>
-<!-- instructions from firebase: Add firebase to webapp 
-Copy and paste the snippet below at the bottom of your HTML, before other script tags --> 
+
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 <!-- <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script> -->
 <script>
@@ -240,6 +239,19 @@ Copy and paste the snippet below at the bottom of your HTML, before other script
     projectId: "hackathon-video-chat",
     storageBucket: "hackathon-video-chat.appspot.com",
     messagingSenderId: "633008113206"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script>
+  // Initialize Firebase Chatbot
+  var config = {
+    apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
+    authDomain: "virtualclinicprototype.firebaseapp.com",
+    databaseURL: "https://virtualclinicprototype.firebaseio.com",
+    projectId: "virtualclinicprototype",
+    storageBucket: "virtualclinicprototype.appspot.com",
+    messagingSenderId: "314092904355"
   };
   firebase.initializeApp(config);
 </script>
