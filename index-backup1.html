@@ -85,39 +85,37 @@
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
-                      <div style="text-align:center;">
-                         <header><h3>Proof of Concept Intake Form</h3></header>
-                         <h4>Important!  This is not for legal use</h4><br />
-                      </div>
-                    <form autocomplete="off" action="/" style="margin-left:30px;">
+                      <div style="text-align:center;"><!-- header -->
+                         <header><h3>Initial Intake Form</h3></header>
+                         <h4>Please fill out the contact form in case we lose the connection</h4>
+                         <h4>Important!  This is for proof-of-concept purposes only! Not for legal use!</h4><br />
+                      </div><!-- header -->
+                      
+                  <div style="background-color:#e6f2ff;"><!-- form wrapper -->    
+                    <form autocomplete="off" action="/">
+                         
+                         <label for="name">Your Name:</label><br />  
+                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
                 
-                         <label for="date">Date:</label><br /> 
+                         <label for="date">Date of Birth:</label><br /> 
                          <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
                          
                            <div class="autocomplete">
                             <label for="myState">State of Residence:</label><br /> 
                             <input id="myState" type="text" name="myState"><br /> 
-                           </div><br />
-
-                         <label for="name">Your Name:</label><br />  
-                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />                                                                              
+                           </div><br />                                                                   
 
                          <label for="email">Email:</label><br />  
                          <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
                          
                          <label for="phone">Contact Phone:</label><br />  
                          <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
-
-                         <label for="age">Age:</label><br /> 
-                         <input id="age" type="number" mozactionhint="next"><br />
                          
-                         <label for="income">Monthly Income:</label><br />
-                         <input id="income" type="number" mozactionhint="next"><br />
-                         
-                        
-                      <input type="submit">
+                       <div><!-- submit button wrapper --> 
+                         <input type="submit">
+                       <!-- submit button wrapper -->     
                     </form>
-                     
+                      </div><!-- form wrapper-->   
               <script>
                function autocomplete(inp, arr) {
                  /*the autocomplete function takes two arguments,
@@ -225,7 +223,7 @@
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
                </script>
-                 </div>      
+                 </div><!-- col md 8 for intake form -->      
             </div><!-- container for intake form -->
        </div><!-- row for intake form -->
   </body>
@@ -246,4 +244,3 @@ Copy and paste the snippet below at the bottom of your HTML, before other script
   firebase.initializeApp(config);
 </script>
 </html>
- 
