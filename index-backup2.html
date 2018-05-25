@@ -54,7 +54,7 @@
        <div class="row" style="margin-top:50px;">
             <div class="container">
                  <div class="col-md-4"><!-- upload -->                 
-                  
+                <!-- version one    
                  <button onclick="uploadFunction()" style="width:50px;">Upload</button>
                     <script>
                          function uploadFunction() {
@@ -62,44 +62,60 @@
                              uploadfile.setAttribute("type", "file");
                              document.body.appendChild(uploadfile);
                          }
-                    </script>                    
+                    </script> 
+                     --->
+                      <!-- version 2 -->
+               <form enctype="multipart/form-data" action="" method="post">
+                   <p>Upload file(s)</p>
+                   <div id="files">
+                       <p><input type="file" name="uploaded_file[]" /></p>
+                   </div>
+                   <p><input type="button" value="Add File" onclick="addFile();" /></p>
+               </form>
                       
+                      <script>
+                      var fileId = 0; // used by the addFile() function to keep track of IDs
+                      function addFile() {
+                        fileId++; // increment fileId to get a unique ID for the new element
+                        var html = '<input type="file" name="uploaded_files[]" /> ' +
+                                   '<a href="" onclick="javascript:removeElement('file-' + fileId + ''); return false;">Remove</a>';
+                        addElement('files', 'p', 'file-' + fileId, html);
+                    }
+                      </script>                      
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
-                      <div style="text-align:center;">
-                         <header><h3>Proof of Concept Form</h3></header>
+                      <div style="text-align:center;"><!-- header -->
+                         <header><h3>Initial Intake Form</h3></header>
+                         <h4>Please fill out the contact form in case we lose the connection</h4>
+                         <h5>Make sure you type or select the right state of residence.  All the states have very different laws, and we need to know your state of residence in order to get you the right legal help</h5>
                          <h4>Important!  This is not for legal use</h4><br />
-                      </div>
+                      </div><!-- header -->
+                      
+                  <div style="background-color:#e6f2ff;"><!-- form wrapper -->    
                     <form autocomplete="off" action="/" style="margin-left:30px;">
+                         
+                         <label for="name">Your Name:</label><br />  
+                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
                 
-                         <label for="date">Date:</label><br /> 
+                         <label for="date">Date of Birth:</label><br /> 
                          <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
                          
                            <div class="autocomplete">
                             <label for="myState">State of Residence:</label><br /> 
                             <input id="myState" type="text" name="myState"><br /> 
-                           </div><br />
-
-                         <label for="name">Your Name:</label><br />  
-                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />                                                                              
+                           </div><br />                                                                   
 
                          <label for="email">Email:</label><br />  
                          <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
                          
                          <label for="phone">Contact Phone:</label><br />  
                          <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
-
-                         <label for="age">Age:</label><br /> 
-                         <input id="age" type="number" mozactionhint="next"><br />
                          
-                         <label for="income">Monthly Income:</label>
-                         <input id="income" type="number" mozactionhint="next"><br />
-                         
-                         
+                        
                       <input type="submit">
                     </form>
-                     
+                      </div><!-- form wrapper-->   
               <script>
                function autocomplete(inp, arr) {
                  /*the autocomplete function takes two arguments,
@@ -207,7 +223,7 @@
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
                </script>
-                 </div>      
+                 </div><!-- col md 8 for intake form -->      
             </div><!-- container for intake form -->
        </div><!-- row for intake form -->
   </body>
