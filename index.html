@@ -271,16 +271,16 @@
   var database = firebase.database();
 </script>
  -->    
-  ////fourth attempt
+  ////fifth attempt
      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
      <script>
 $(document).ready(function() {
     if ($('#newContact').length > 0 ) {
-        contactScript('forcontact');
+        contactScript();
     }
 });
 //firebase
-function contactScript(value) {
+function contactScript() {
     var a = { 
     apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
     authDomain: "initialintakeform.firebaseapp.com",
@@ -302,5 +302,5 @@ function contactScript(value) {
             $(".sucess-none").css("display", "none") }), !1 })   
 }
 </script>
-     ////end fourth attempt
+     ////end fifth attempt
 </html>
