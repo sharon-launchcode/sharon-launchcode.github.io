@@ -88,12 +88,11 @@
                       <div style="text-align:center;"><!-- header -->
                          <header><h3>Initial Intake Form</h3></header>
                          <h4>Please fill out the contact form in case we lose the connection</h4>
-                         <h5>Make sure you type or select the right state of residence.  All the states have very different laws, and we need to know your state of residence in order to get you the right legal help</h5>
-                         <h4>Important!  This is not for legal use</h4><br />
+                         <h4>Important!  This is for proof-of-concept purposes only! Not for legal use!</h4><br />
                       </div><!-- header -->
                       
                   <div style="background-color:#e6f2ff;"><!-- form wrapper -->    
-                    <form autocomplete="off" action="/" style="margin-left:30px;">
+                    <form autocomplete="off" action="/">
                          
                          <label for="name">Your Name:</label><br />  
                          <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
@@ -112,8 +111,9 @@
                          <label for="phone">Contact Phone:</label><br />  
                          <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
                          
-                        
-                      <input type="submit">
+                       <div><!-- submit button wrapper --> 
+                         <input type="submit">
+                       <!-- submit button wrapper -->     
                     </form>
                       </div><!-- form wrapper-->   
               <script>
@@ -229,10 +229,10 @@
   </body>
 <!-- instructions from firebase: Add firebase to webapp 
 Copy and paste the snippet below at the bottom of your HTML, before other script tags --> 
-
-<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script> -->
 <script>
-  // Initialize Firebase
+  // Initialize Firebase for Video
   var config = {
     apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
     authDomain: "hackathon-video-chat.firebaseapp.com",
@@ -240,6 +240,20 @@ Copy and paste the snippet below at the bottom of your HTML, before other script
     projectId: "hackathon-video-chat",
     storageBucket: "hackathon-video-chat.appspot.com",
     messagingSenderId: "633008113206"
+  };
+  firebase.initializeApp(config);
+</script>
+       
+
+<script>
+  // Initialize Firebase for Initial Intake Form
+  var config = {
+    apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
+    authDomain: "initialintakeform.firebaseapp.com",
+    databaseURL: "https://initialintakeform.firebaseio.com",
+    projectId: "initialintakeform",
+    storageBucket: "initialintakeform.appspot.com",
+    messagingSenderId: "51123204676"
   };
   firebase.initializeApp(config);
 </script>
