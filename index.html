@@ -72,7 +72,7 @@
                    </div>
                    <p><input type="button" value="Add File" onclick="addFile();" /></p>
                </form>
-                      
+                      <!--
                       <script>
                       var fileId = 0; // used by the addFile() function to keep track of IDs
                       function addFile() {
@@ -81,7 +81,8 @@
                                    '<a href="" onclick="javascript:removeElement('file-' + fileId + ''); return false;">Remove</a>';
                         addElement('files', 'p', 'file-' + fileId, html);
                     }
-                      </script>                      
+                      </script>  
+-->
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
@@ -271,7 +272,7 @@
   var database = firebase.database();
 </script>
  -->    
-  ////sixth attempt
+  ////seventh attempt
      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
      <script>
 $(document).ready(function() {
@@ -302,5 +303,5 @@ function contactScript() {
             $(".sucess-none").css("display", "none") }), !1 })   
 }
 </script>
-    ////end sixth attempt 
+    ////end seventh attempt 
 </html>
