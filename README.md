@@ -55,6 +55,10 @@
 ### Brian Stewart
 ##### http://bdsworks.org
 
+### MDN
+''' Note: opacity is used to hide the file input instead of visibility: hidden or display: none, because assistive technology interprets the latter two styles to mean the file input isn't interactive. '''
+#### https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
+
 ### W3C SChools -- who really have provided me with many lessons beyond the ones I used in this project -- thank you!
 #### https://www.w3schools.com/default.asp
 
