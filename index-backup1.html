@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-     <!-- source for script https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document -->
+   <!-- source for script https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document -->
    <!--[if lt IE 9]>
   <script>
     document.createElement("header" );
@@ -87,34 +87,34 @@
                  <div class="col-md-8"><!-- intake form -->
                       <div style="text-align:center;"><!-- header -->
                          <header><h3>Initial Intake Form</h3></header>
-                         <h4>Please fill out the contact form in case we lose the connection</h4>
-                         <h4>Important!  This is for proof-of-concept purposes only! Not for legal use!</h4><br />
+                              <h4>Please fill out the contact form in case we lose the video connection.</h4> 
+                              <h4>This is for proof-of-concept purposes only! Not for legal use!</h4><br />
                       </div><!-- header -->
                       
-                  <div style="background-color:#e6f2ff;"><!-- form wrapper -->    
-                    <form autocomplete="off" action="/">
+                      <div><!-- form wrapper -->  
+                         <form autocomplete="off" action="/">
                          
-                         <label for="name">Your Name:</label><br />  
-                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
-                
-                         <label for="date">Date of Birth:</label><br /> 
-                         <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
-                         
-                           <div class="autocomplete">
-                            <label for="myState">State of Residence:</label><br /> 
-                            <input id="myState" type="text" name="myState"><br /> 
-                           </div><br />                                                                   
+                              <label for="name">Your Name:</label><br />  
+                              <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
-                         <label for="email">Email:</label><br />  
-                         <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
-                         
-                         <label for="phone">Contact Phone:</label><br />  
-                         <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
-                         
-                       <div><!-- submit button wrapper --> 
-                         <input type="submit">
-                       <!-- submit button wrapper -->     
-                    </form>
+                                <div class="autocomplete">
+                                 <label for="myState">State of Residence:</label><br /> 
+                                 <input id="myState" type="text" name="myState"><br /> 
+                                </div><br /> 
+                              
+                              <label for="date">Date of Birth:</label><br /> 
+                              <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
+
+                              <label for="email">Email:</label><br />  
+                              <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+
+                              <label for="phone">Contact Phone:</label><br />  
+                              <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+
+                            <div style="margin-top:25px;"><!-- submit button wrapper --> 
+                              <input type="submit">
+                            <!-- submit button wrapper -->     
+                         </form>
                       </div><!-- form wrapper-->   
               <script>
                function autocomplete(inp, arr) {
@@ -223,16 +223,15 @@
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
                </script>
-                 </div><!-- col md 8 for intake form -->      
+                 </div><!-- col md 8 for initial intake form -->      
             </div><!-- container for intake form -->
        </div><!-- row for intake form -->
   </body>
-<!-- instructions from firebase: Add firebase to webapp 
-Copy and paste the snippet below at the bottom of your HTML, before other script tags --> 
 
-<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script> -->
 <script>
-  // Initialize Firebase
+  // Initialize Firebase for Video
   var config = {
     apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
     authDomain: "hackathon-video-chat.firebaseapp.com",
@@ -240,6 +239,32 @@ Copy and paste the snippet below at the bottom of your HTML, before other script
     projectId: "hackathon-video-chat",
     storageBucket: "hackathon-video-chat.appspot.com",
     messagingSenderId: "633008113206"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script>
+  // Initialize Firebase Chatbot
+  var config = {
+    apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
+    authDomain: "virtualclinicprototype.firebaseapp.com",
+    databaseURL: "https://virtualclinicprototype.firebaseio.com",
+    projectId: "virtualclinicprototype",
+    storageBucket: "virtualclinicprototype.appspot.com",
+    messagingSenderId: "314092904355"
+  };
+  firebase.initializeApp(config);
+</script>
+       
+<script>
+  // Initialize Firebase for Initial Intake Form
+  var config = {
+    apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
+    authDomain: "initialintakeform.firebaseapp.com",
+    databaseURL: "https://initialintakeform.firebaseio.com",
+    projectId: "initialintakeform",
+    storageBucket: "initialintakeform.appspot.com",
+    messagingSenderId: "51123204676"
   };
   firebase.initializeApp(config);
 </script>
