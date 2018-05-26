@@ -256,6 +256,13 @@
   //firebase.initializeApp(config3);
 
 </script>
-     <script src="test.js"></script>
+     <!-- <script src="test.js"></script> -->
+     <script>
+        document.getElementById('contactForm').addEventListener('submit', 'submitForm');
+        function submitForm(e) {
+        e.preventDefault();
+           console.log('internal test');      
+        }
+     </script>   
   </body>   
 </html>
