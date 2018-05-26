@@ -261,23 +261,23 @@
    </script>
     <script>
        function contactScript(value) {
-    var a = { 
-         apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
-          authDomain: "initialintakeform.firebaseapp.com",
-          databaseURL: "https://initialintakeform.firebaseio.com",
-          projectId: "initialintakeform",
-          storageBucket: "initialintakeform.appspot.com",
-          messagingSenderId: "51123204676" };
-    firebase.initializeApp(a);
-    var b = firebase.database().ref("messages");
-        $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
-        var c = $("#name").val(),
-            d = $("#email").val(),
-            f = { name: c, email: d};
-        return b.push(f).then(function(a) { 
-            $(".sucess").css("display", "block"), 
-            $(".sucess-none").css("display", "none") }), !1 })   
-}
+          var a = { 
+               apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
+                authDomain: "initialintakeform.firebaseapp.com",
+                databaseURL: "https://initialintakeform.firebaseio.com",
+                projectId: "initialintakeform",
+                storageBucket: "initialintakeform.appspot.com",
+                messagingSenderId: "51123204676" };
+          firebase.initializeApp(a);
+          var b = firebase.database().ref("messages");
+              $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
+              var c = $("#name").val(),
+                  d = $("#email").val(),
+                  f = { name: c, email: d};
+              return b.push(f).then(function(a) { 
+                  $(".sucess").css("display", "block"), 
+                  $(".sucess-none").css("display", "none") }), !1 })   
+         }
        
      </script>   
      
