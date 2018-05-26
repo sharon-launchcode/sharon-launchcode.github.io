@@ -1,3 +1,12 @@
+  var config3 = {
+    apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
+    authDomain: "initialintakeform.firebaseapp.com",
+    databaseURL: "https://initialintakeform.firebaseio.com",
+    projectId: "initialintakeform",
+    storageBucket: "initialintakeform.appspot.com",
+    messagingSenderId: "51123204676"
+  };
+   firebase.initializeApp(config3);
 // event listener ... listen to form submit for initial intake 
 // to do that, must first grab the form
 // get the id
