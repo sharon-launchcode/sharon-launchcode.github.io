@@ -26,7 +26,6 @@ function submitForm(e){
   var phone = getInputVal('phone');
   var state = getInputVal('state');
 
-
   // Save message
   saveMessage(name, dateOfBirth, email, phone, state);
 
