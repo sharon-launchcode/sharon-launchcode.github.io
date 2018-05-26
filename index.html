@@ -105,15 +105,15 @@
                 </div><!-- form wrapper-->
                     //////Revamping  https://github.com/firebase/quickstart-js/blob/master/database/scripts/main.js /////
                     <script>  
-                      
-                       //Get the input values
-                       var name = getInputVal('name');
-                       var myState = getInputVal('myState');
-                       var dateOfBirth = getInputVal('dateOfBirth');
-                       var email = getInputVal('email');
-                       var phone = getInputVal('phone');
+                       
+                       // Shortcuts to DOM Elements.
+                       var name = document.getElementById('name');
+                       var myState = document.getElementById('myState');
+                       var dateOfBirth = document.getElementById('dateOfBirth');
+                       var email = document.getElementById('email');
+                       var phone = document.getElementById('phone');
                        console.log(name);
-   
+                    </script>
                     //////end revamp part one//////
               <script>
                function autocomplete(inp, arr) {
