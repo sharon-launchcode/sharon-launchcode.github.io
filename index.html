@@ -220,7 +220,7 @@
    <!-- scripting for firebase starts here -->
      
    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-   <script src="test.js"></script>
+
    <script>
         // Initialize Firebase for Video
         var config1 = {
@@ -245,17 +245,17 @@
         //firebase.initializeApp(config2);
 
         // Initialize Firebase for Initial Intake Form  -- in seperate file, test.js
-        //var config3 = {
-          //apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
-          //authDomain: "initialintakeform.firebaseapp.com",
-          //databaseURL: "https://initialintakeform.firebaseio.com",
-          //projectId: "initialintakeform",
-          //storageBucket: "initialintakeform.appspot.com",
-          //messagingSenderId: "51123204676"
-        //};
+        var config3 = {
+          apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
+          authDomain: "initialintakeform.firebaseapp.com",
+          databaseURL: "https://initialintakeform.firebaseio.com",
+          projectId: "initialintakeform",
+          storageBucket: "initialintakeform.appspot.com",
+          messagingSenderId: "51123204676"
+        };
          //firebase.initializeApp(config3);
-         //firebase.initializeApp(config1, config2, config3);
-         firebase.initializeApp(config1, config2);
+         firebase.initializeApp(config1, config2, config3);
+         //firebase.initializeApp(config1, config2);
 
    </script>
     
