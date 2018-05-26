@@ -113,8 +113,8 @@
                        //var email = document.getElementById('email');
                        //var phone = document.getElementById('phone');
                        // console.log(name);
-                                      
-                       function submitForm(e) {
+                       document.getElementById('contactForm').addEventListener('submit','submitForm');               
+                       var submitForm = function submitForm(e) {
                        e.preventDefault();
                        console.log('test');
                           var name = document.getElementById('name').value;
@@ -125,7 +125,7 @@
                           console.log(name);
                         }
                   </script>
-                    //////end revamp part three/////
+                    //////end revamp part four/////
               <script>
                function autocomplete(inp, arr) {
                  /*the autocomplete function takes two arguments,
