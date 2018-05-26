@@ -53,9 +53,10 @@ function saveMessage(name, dateOfBirth, email, phone, state){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
-    company:dateOfBirth,
+    state:state,
+    dateOfBirth:dateOfBirth,
     email:email,
-    phone:phone,
-    message:state
+    phone:phone
+    
   }); 
 }
