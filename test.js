@@ -9,5 +9,6 @@ document.getElementByID('contactForm').addEventListener('submit', 'submitForm');
 // take the event parameter, which is e, and preventDefault ..... e.preventDefault()
 function submitForm(e) {
   e.preventDefault();
+  console.log('test');
 }
 
