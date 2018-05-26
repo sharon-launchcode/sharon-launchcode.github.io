@@ -81,7 +81,7 @@
                       </div><!-- header -->
                       
                       <div><!-- form wrapper -->  
-                         <form id="newContact" autocomplete="off">
+                         <form id="contactForm" autocomplete="off">
                          
                               <label for="name">Your Name:</label><br />  
                               <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
@@ -260,39 +260,6 @@
   var database = firebase.database();
 </script>
  -->    
-  ////13 attempt
-     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-    
-     <script>
-        
-//$(document).ready(function() {
-   // if ($('#newContact').length > 0 ) {
-       // contactScript();
-   // }
-//}); 
 
-//firebase
-function contactScript() {
-    var a = { 
-    apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
-    authDomain: "initialintakeform.firebaseapp.com",
-    databaseURL: "https://initialintakeform.firebaseio.com",
-    projectId: "initialintakeform",
-    storageBucket: "initialintakeform.appspot.com",
-    messagingSenderId: "51123204676" };
-    firebase.initializeApp(a);
-   var database = firebase.database();
-    var c = document.getElementById('name');
-    var d = document.getElementById('email');
-    var b = firebase.database().ref("messages");
-        $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
-        var c = $("#name").val(),
-            d = $("#email").val(),
-            f = { name: c, email: d};
-        return b.push(f).then(function(a) { 
-            $(".sucess").css("display", "block"), 
-            $(".sucess-none").css("display", "none") }), !1 })   
-}
-</script>
-    ////end 13 attempt
+
 </html>
