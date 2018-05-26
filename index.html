@@ -105,13 +105,9 @@
                    </form>
                 </div><!-- form wrapper-->
                     //////console log test/////
-                    <script>
-                    //document.getElementById('contactForm').addEventListener('submit','submitForm');
-                    //Commenting out submitForm in response to error
-                    //Uncaught TypeError: Failed to execute 'addEventListener' on 'EventTarget': 
-                    //The callback provided as parameter 2 is not an object.at (index):111   
+                    <script>  
                     document.getElementById('contactForm').addEventListener('submit', 'submitForm');
-                     var submitForm = function submitForm(e) {
+                    function submitForm(e) {
                        e.preventDefault();
                        console.log('test');
                        //Get the input values
