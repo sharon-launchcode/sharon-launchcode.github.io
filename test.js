@@ -18,7 +18,6 @@ function submitForm(e) {
   var phone = getInputVal('phone');
   console.log(name);
 }
-
 function getInputVal(id) {
   return document.getElementById(id).value;
   //make sure and add the VALUE because that is what you need from the form
