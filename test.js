@@ -23,4 +23,3 @@ function getInputVal(id) {
   return document.getElementById(id).value;
   //make sure and add the VALUE because that is what you need from the form
 }
-//Save the message to firebase 
