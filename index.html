@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/autocomplete.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
  </head>
-    
+</head>     
   <body onload="showMyFace()">
 
        <div class="row">
@@ -49,28 +49,39 @@
                 </div><!-- col-md  6 -->
             </div><!-- container -->  
        </div><!-- row -->
-         
+       
+       
        <div class="row" style="margin-top:50px;">
             <div class="container">
                  <div class="col-md-4"><!-- upload -->                 
-                   <!-- version one    
-                    <button onclick="uploadFunction()" style="width:50px;">Upload</button>
-                       <script>
-                            function uploadFunction() {
-                                var uploadfile = document.createElement("INPUT");
-                                uploadfile.setAttribute("type", "file");
-                                document.body.appendChild(uploadfile);
-                            }
-                       </script> 
-                        --->
-                         <!-- version 2 -->
-                     <form enctype="multipart/form-data" action="" method="post">
-                         <p>Upload file(s)</p>
-                         <div id="files">
-                             <p><input type="file" name="uploaded_file[]" /></p>
-                         </div>
-                     </form>
+                <!-- version one    
+                 <button onclick="uploadFunction()" style="width:50px;">Upload</button>
+                    <script>
+                         function uploadFunction() {
+                             var uploadfile = document.createElement("INPUT");
+                             uploadfile.setAttribute("type", "file");
+                             document.body.appendChild(uploadfile);
+                         }
+                    </script> 
+                     --->
+                      <!-- version 2 -->
+               <form enctype="multipart/form-data" action="" method="post">
+                   <p>Upload file(s)</p>
+                   <div id="files">
+                       <p><input type="file" name="uploaded_file[]" /></p>
+                   </div>
+                   <p><input type="button" value="Add File" onclick="addFile();" /></p>
+               </form>
                       
+                      <script>
+                      var fileId = 0; // used by the addFile() function to keep track of IDs
+                      function addFile() {
+                        fileId++; // increment fileId to get a unique ID for the new element
+                        var html = '<input type="file" name="uploaded_files[]" /> ' +
+                                   '<a href="" onclick="javascript:removeElement('file-' + fileId + ''); return false;">Remove</a>';
+                        addElement('files', 'p', 'file-' + fileId, html);
+                    }
+                      </script>                      
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
@@ -81,27 +92,27 @@
                       </div><!-- header -->
                       
                       <div><!-- form wrapper -->  
-                         <form id="contactform" autocomplete="off">
+                         <form autocomplete="off" action="/">
                          
                               <label for="name">Your Name:</label><br />  
-                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
+                              <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
                                 <div class="autocomplete">
-                                 <label for="mystate">State of Residence:</label><br /> 
-                                 <input id="mystate" type="text" name="mystate"><br /> 
+                                 <label for="myState">State of Residence:</label><br /> 
+                                 <input id="myState" type="text" name="myState"><br /> 
                                 </div><br /> 
                               
                               <label for="date">Date of Birth:</label><br /> 
-                              <input id="birthdate" type="date" x-moz-errormessage="Please specify a valid date."><br />
+                              <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
                               <label for="email">Email:</label><br />  
-                              <input name="email" id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+                              <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
 
                               <label for="phone">Contact Phone:</label><br />  
-                              <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+                              <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
                             <div style="margin-top:25px;"><!-- submit button wrapper --> 
-                                <input type="submit" class="btn" value="Submit" name="submit" id="submitInitial">
+                              <input type="submit">
                             <!-- submit button wrapper -->     
                          </form>
                       </div><!-- form wrapper-->   
@@ -207,6 +218,7 @@
                                          
           var states = ["Alabama","Alaska","Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia","Hawaii", "Idaho", "Illinois","Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland","Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon","Pennsylvania","Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont","Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"];
 
+
                /*initiate the autocomplete function on the "myInput" now "myState" element, and pass along the countries array as possible autocomplete values:*/
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
@@ -214,10 +226,10 @@
                  </div><!-- col md 8 for initial intake form -->      
             </div><!-- container for intake form -->
        </div><!-- row for intake form -->
-  </body> 
+  </body>
 
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-
+<!-- <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script> -->
 <script>
   // Initialize Firebase for Video
   var config = {
@@ -229,7 +241,9 @@
     messagingSenderId: "633008113206"
   };
   firebase.initializeApp(config);
+</script>
 
+<script>
   // Initialize Firebase Chatbot
   var config = {
     apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
@@ -240,7 +254,9 @@
     messagingSenderId: "314092904355"
   };
   firebase.initializeApp(config);
-
+</script>
+       
+<script>
   // Initialize Firebase for Initial Intake Form
   var config = {
     apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
@@ -251,9 +267,5 @@
     messagingSenderId: "51123204676"
   };
   firebase.initializeApp(config);
-  var database = firebase.database();
 </script>
- 
-
-
 </html>
