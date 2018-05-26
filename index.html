@@ -105,7 +105,27 @@
                          <button type="submit" class="btn btn-primary btn-lg">Submit Initial Intake Form</button>
                       </div><!-- submit button wrapper -->     
                    </form>
-                </div><!-- form wrapper-->   
+                </div><!-- form wrapper-->
+                    //////console log test
+                    <script>
+                    document.getElementById('contactForm').addEventListener('submit','submitForm');
+                     function submitForm(e) {
+                       e.preventDefault();
+                       console.log('test');
+                       //Get the input values
+                       var name = getInputVal('name');
+                       var myState = getInputVal('myState');
+                       var dateOfBirth = getInputVal('dateOfBirth');
+                       var email = getInputVal('email');
+                       var phone = getInputVal('phone');
+                       console.log(name);
+                     }
+                     function getInputVal(id) {
+                       return document.getElementById(id).value;
+                       //make sure and add the VALUE because that is what you need from the form
+                     }
+                    </script>
+                    //////end console log test
               <script>
                function autocomplete(inp, arr) {
                  /*the autocomplete function takes two arguments,
