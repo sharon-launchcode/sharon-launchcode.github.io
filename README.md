@@ -54,9 +54,6 @@
 ### Brian Stewart
 ##### http://bdsworks.org
 
-### Cory LaViska | A Beautiful Site
-##### https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
-
 ### Karthik Kamalakannankarthik | Discourse
 ##### https://discourse.skcript.com/t/how-do-i-create-a-contact-form-using-firebase-as-backend/392
 
