@@ -213,39 +213,8 @@
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
                </script>
-                 </div><!-- col md 8 for initial intake form --> 
-               //////////////test
-               <script>
-               
-               document.getElementById('contactForm').addEventListener('submit','submitForm');
-
-                  function submitForm(e) {
-                    e.preventDefault();
-                    console.log('test');
-                    //Get the input values
-                    var name = getInputVal('name');
-                    var myState = getInputVal('myState');
-                    var dateOfBirth = getInputVal('dateOfBirth');
-                    var email = getInputVal('email');
-                    var phone = getInputVal('phone');
-                    console.log(name);
-                  }
-                  function getInputVal(id) {
-                    return document.getElementById(id).value;
-                    //make sure and add the VALUE because that is what you need from the form
-                  }
-               
-               
-               
-               
-               
-               </script>
-               /////////////
-               
-               
-               
-               
-            </div><!-- container for intake form -->
+          </div><!-- col md 8 for initial intake form -->                       
+        </div><!-- container for intake form -->
        </div><!-- row for intake form -->
 
 
@@ -286,8 +255,8 @@
    firebase.initializeApp(config1, config2, config3);
   //firebase.initializeApp(config3);
 
-</script>
-     <!-- <script src="test.js"></script>  -->
+   </script>
+   <script src="test.js"></script>
 
   </body>   
 </html>
