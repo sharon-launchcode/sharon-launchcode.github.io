@@ -56,5 +56,5 @@ function saveMessage(name, dateOfBirth, email, phone, state){
     email:email,
     phone:phone,
     message:state
-  });
+  }); 
 }
