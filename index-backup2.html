@@ -82,18 +82,18 @@
                       </div><!-- header -->
                       
                 <div><!-- form wrapper -->  
-                   <form autocomplete="off">
+                   <form id="contactForm" autocomplete="off">
 
                         <label for="name">Your Name:</label><br />  
                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
-                          <div class="autocomplete">
+                         <div class="autocomplete">
                            <label for="myState">State of Residence:</label><br /> 
                            <input id="myState" type="text" name="myState"><br /> 
-                          </div><br /> 
+                         </div><br /> 
 
-                        <label for="date">Date of Birth:</label><br /> 
-                        <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
+                        <label for="dateOfBirth">Date of Birth:</label><br /> 
+                        <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
                         <label for="email">Email:</label><br />  
                         <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
@@ -102,8 +102,8 @@
                         <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
                       <div style="margin-top:25px;"><!-- submit button wrapper --> 
-                        <input type="submit">
-                      <!-- submit button wrapper -->     
+                         <button type="submit" class="btn btn-primary btn-lg">Submit Initial Intake Form</button>
+                      </div><!-- submit button wrapper -->     
                    </form>
                 </div><!-- form wrapper-->   
               <script>
@@ -213,47 +213,73 @@
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
                </script>
-                 </div><!-- col md 8 for initial intake form -->      
-            </div><!-- container for intake form -->
+          </div><!-- col md 8 for initial intake form -->                       
+        </div><!-- container for intake form -->
        </div><!-- row for intake form -->
-  </body>
+     
+   <!-- scripting for firebase starts here -->
+     
+   <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+   <script>
+        // Initialize Firebase for Video
+        var config1 = {
+          apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
+          authDomain: "hackathon-video-chat.firebaseapp.com",
+          databaseURL: "https://hackathon-video-chat.firebaseio.com",
+          projectId: "hackathon-video-chat",
+          storageBucket: "hackathon-video-chat.appspot.com",
+          messagingSenderId: "633008113206"
+        };
+        //firebase.initializeApp(config1);
 
-<script>
-  // Initialize Firebase for Video
-  var config1 = {
-    apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
-    authDomain: "hackathon-video-chat.firebaseapp.com",
-    databaseURL: "https://hackathon-video-chat.firebaseio.com",
-    projectId: "hackathon-video-chat",
-    storageBucket: "hackathon-video-chat.appspot.com",
-    messagingSenderId: "633008113206"
-  };
-  //firebase.initializeApp(config1);
+        // Initialize Firebase Chatbot
+        var config2 = {
+          apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
+          authDomain: "virtualclinicprototype.firebaseapp.com",
+          databaseURL: "https://virtualclinicprototype.firebaseio.com",
+          projectId: "virtualclinicprototype",
+          storageBucket: "virtualclinicprototype.appspot.com",
+          messagingSenderId: "314092904355"
+        };
+        //firebase.initializeApp(config2);
 
-  // Initialize Firebase Chatbot
-  var config2 = {
-    apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
-    authDomain: "virtualclinicprototype.firebaseapp.com",
-    databaseURL: "https://virtualclinicprototype.firebaseio.com",
-    projectId: "virtualclinicprototype",
-    storageBucket: "virtualclinicprototype.appspot.com",
-    messagingSenderId: "314092904355"
-  };
-  //firebase.initializeApp(config2);
+        // Initialize Firebase for Initial Intake Form  -- in seperate file, test.js
+        //var config3 = {
+          //apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
+          //authDomain: "initialintakeform.firebaseapp.com",
+          //databaseURL: "https://initialintakeform.firebaseio.com",
+          //projectId: "initialintakeform",
+          //storageBucket: "initialintakeform.appspot.com",
+          //messagingSenderId: "51123204676"
+        //};
+        //var config3data = firebase.database().ref("messages");
+         //firebase.initializeApp(config3);
+         //firebase.initializeApp(config1, config2, config3);
+         firebase.initializeApp(config1, config2);
 
-  // Initialize Firebase for Initial Intake Form
-  var config3 = {
-    apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
-    authDomain: "initialintakeform.firebaseapp.com",
-    databaseURL: "https://initialintakeform.firebaseio.com",
-    projectId: "initialintakeform",
-    storageBucket: "initialintakeform.appspot.com",
-    messagingSenderId: "51123204676"
-  };
-   firebase.initializeApp(config1, config2, config3);
-  //firebase.initializeApp(config3);
-
-</script>
+   </script>
+    <script>
+       function contactScript(value) {
+    var a = { 
+         apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
+          authDomain: "initialintakeform.firebaseapp.com",
+          databaseURL: "https://initialintakeform.firebaseio.com",
+          projectId: "initialintakeform",
+          storageBucket: "initialintakeform.appspot.com",
+          messagingSenderId: "51123204676" };
+    firebase.initializeApp(a);
+    var b = firebase.database().ref("messages");
+        $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
+        var c = $("#name").val(),
+            d = $("#email").val(),
+            f = { name: c, email: d};
+        return b.push(f).then(function(a) { 
+            $(".sucess").css("display", "block"), 
+            $(".sucess-none").css("display", "none") }), !1 })   
+}
+       
+     </script>   
+     
+  </body>   
 </html>
