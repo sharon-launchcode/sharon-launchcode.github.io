@@ -12,9 +12,10 @@ function submitForm(e) {
   console.log('test');
   //Get the input values
   var name = getInputVal('name');
-  var email = getInputVal('email');
   var myState = getInputVal('myState');
-  
+  var dateOfBirth = getInputVal('dateOfBirth');
+  var email = getInputVal('email');
+  var phone = getInputVal('phone');  
 }
 
 function getInputVal(id) {
