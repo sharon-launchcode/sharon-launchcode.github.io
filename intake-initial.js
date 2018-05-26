@@ -31,7 +31,7 @@ function submitForm(e){
   saveMessage(name, dateOfBirth, email, phone, state);
 
   // Show alert
-  document.querySelector('.alert').style.display = 'block';
+  //document.querySelector('.alert').style.display = 'block';
 
   // Hide alert after 3 seconds
   setTimeout(function(){
