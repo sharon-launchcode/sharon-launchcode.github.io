@@ -50,4 +50,4 @@ var states =
     "West Virginia", 
     "Wisconsin", 
     "Wyoming"
-     ]
+     ];
