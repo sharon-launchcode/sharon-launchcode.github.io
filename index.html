@@ -107,7 +107,8 @@
                     //////console log test/////
                     <script>  
                     document.getElementById('contactForm').addEventListener('submit', 'submitForm');
-                       //
+                       //(index):109 Uncaught TypeError: Failed to execute 'addEventListener' on 'EventTarget': 
+                       //The callback provided as parameter 2 is not an object.at (index):109
                        var submitForm = new Function();  // A new Function object
                        //added above in response to error message saying second parameter was not an object
                        function submitForm(e) {
