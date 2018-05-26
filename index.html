@@ -103,17 +103,9 @@
                       </div><!-- submit button wrapper -->     
                    </form>
                 </div><!-- form wrapper-->
-                    //////console log test again /////
+                    //////Revamping  https://github.com/firebase/quickstart-js/blob/master/database/scripts/main.js /////
                     <script>  
-                    document.getElementById('contactForm').addEventListener('submit', 'submitForm');
-                       //(index):109 Uncaught TypeError: Failed to execute 'addEventListener' on 'EventTarget': 
-                       //The callback provided as parameter 2 is not an object.at (index):109
-                       //var submitForm = new Function();  // A new Function object
-                       //added above in response to error message saying second parameter was not an object
-                       var submitForm = function submitForm(e) {
-                       e.preventDefault();
-                       console.log('test');
-                       
+                      
                        //Get the input values
                        var name = getInputVal('name');
                        var myState = getInputVal('myState');
@@ -121,13 +113,8 @@
                        var email = getInputVal('email');
                        var phone = getInputVal('phone');
                        console.log(name);
-                     }
-                     function getInputVal(id) {
-                       return document.getElementById(id).value;
-                       //make sure and add the VALUE because that is what you need from the form
-                     }
-                    </script>
-                    //////end console log test//////
+   
+                    //////end revamp part one//////
               <script>
                function autocomplete(inp, arr) {
                  /*the autocomplete function takes two arguments,
