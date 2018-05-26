@@ -49,6 +49,7 @@
                 </div><!-- col-md  6 -->
             </div><!-- container -->  
        </div><!-- row -->
+  
        <div class="row" style="margin-top:50px;">
             <div class="container">
                  <div class="col-md-4"><!-- upload -->                 
@@ -72,51 +73,57 @@
                      
                  </div><!-- col md-4 for uploading documents -->
                  
+ 
                  <div class="col-md-8"><!-- intake form -->
                       <div style="text-align:center;"><!-- header -->
-                         <header><h3>Initial Intake Form</h3></header>
+                         <header><a href="https://sharon-launchcode.github.io/intake-initial.html">Initial Intake Form</a></header>
                               <h4>Please fill out the contact form in case we lose the video connection.</h4> 
                               <h4>This is for proof-of-concept purposes only! Not for legal use!</h4><br />
-                      </div><!-- header -->                     
-                <div><!-- form wrapper -->  
-                   <form id="contactForm" autocomplete="off">
-    
-                        <label for="name">Your Name:</label><br />  
-                        <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
-                  
-                        <label for="dateOfBirth">Date of Birth:</label><br /> 
-                        <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
+                      </div><!-- header -->
+                    /////
+                    <div>
+                    <button onclick="openInitialIntake()" class="btn btn-primary btn-lg">Initial Intake Form</button>
 
-                        <label for="email">Email:</label><br />  
-                        <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+                           <script>
+                           function openInitialIntake() {
+                               window.open("https://sharon-launchcode.github.io/intake-initial.html");
+                           }
+                           </script>
+                    
+            
+                    </div>
+                    
+                    //////
+                      <div><!-- form wrapper -->  
+                         <form id="contactForm" autocomplete="off">
+                            
+                            <div class="alert"></div>
+                         
+                              <label for="name">Your Name:</label><br />  
+                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
-                        <label for="phone">Contact Phone:</label><br />  
-                        <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+                                <div>
+                                 <label for="state">State of Residence:</label><br /> 
+                                 <input id="state" type="text" name="state"><br /> 
+                                </div><br /> 
+                              
+                              <label for="dateOfBirth">Date of Birth:</label><br /> 
+                              <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
-                      <div style="margin-top:25px;"><!-- submit button wrapper --> 
-                         <button type="submit" class="btn btn-primary btn-lg">Submit Initial Intake Form</button>
-                      </div><!-- submit button wrapper -->     
-                   </form>
-                </div><!-- form wrapper-->
-                    <!--  console log test -->
-                    <script>  
-                       
-                       // Shortcuts to DOM Elements.
-                       var name = document.getElementById('name');
-                       var dateOfBirth = document.getElementById('dateOfBirth');
-                       var email = document.getElementById('email');
-                       var phone = document.getElementById('phone');
-                       document.getElementById('contactForm').addEventListener('submit', submitForm);               
-                       function submitForm(e) {
-                       e.preventDefault();
-                       console.log(name);
-                       console.log(dateOfBirth);
-                       console.log(email);
-                       console.log(phone);                                                    
-                        }
-                  </script>
-              <!-- end console log test --->
-          </div><!-- col md 8 for initial intake form -->                       
+                              <label for="email">Email:</label><br />  
+                              <input name="email" id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+
+                              <label for="phone">Contact Phone:</label><br />  
+                              <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+
+                            <div style="margin-top:25px;"><!-- submit button wrapper --> 
+                                <input type="submit" class="btn" value="Submit" name="submit" id="submitInitial">
+                            <!-- submit button wrapper -->     
+                         </form>
+                      </div><!-- form wrapper--> 
+                         
+   
+                 </div><!-- col md 8 for initial intake form -->                       
         </div><!-- container for intake form -->
        </div><!-- row for intake form -->
      
@@ -146,17 +153,10 @@
     messagingSenderId: "314092904355"
   };
   //firebase.initializeApp(config2);
-  // Initialize Firebase for Initial Intake Form
-  var config3 = {
-    apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
-    authDomain: "initialintakeform.firebaseapp.com",
-    databaseURL: "https://initialintakeform.firebaseio.com",
-    projectId: "initialintakeform",
-    storageBucket: "initialintakeform.appspot.com",
-    messagingSenderId: "51123204676"
-  };
-   firebase.initializeApp(config1, config2, config3);
+
+   firebase.initializeApp(config1, config2);
   //firebase.initializeApp(config3); 
 </script>
+     <script src="intake-initial.js"></script>
   </body>   
 </html>
