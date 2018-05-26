@@ -107,14 +107,27 @@
                     <script>  
                        
                        // Shortcuts to DOM Elements.
-                       var name = document.getElementById('name');
-                       var myState = document.getElementById('myState');
-                       var dateOfBirth = document.getElementById('dateOfBirth');
-                       var email = document.getElementById('email');
-                       var phone = document.getElementById('phone');
-                       console.log(name);
+                       //var name = document.getElementById('name');
+                       //var myState = document.getElementById('myState');
+                       //var dateOfBirth = document.getElementById('dateOfBirth');
+                       //var email = document.getElementById('email');
+                       //var phone = document.getElementById('phone');
+                       // console.log(name);
+                       
+                       
+                       function submitForm(e) {
+                       e.preventDefault();
+                       console.log('test');
+                          var name = document.getElementById('name');
+                          var myState = document.getElementById('myState');
+                          var dateOfBirth = document.getElementById('dateOfBirth');
+                          var email = document.getElementById('email');
+                          var phone = document.getElementById('phone');
+                          console.log(name);
+                        }
+                     
                     </script>
-                    //////end revamp part one/////
+                    //////end revamp part two/////
               <script>
                function autocomplete(inp, arr) {
                  /*the autocomplete function takes two arguments,
