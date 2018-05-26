@@ -82,31 +82,31 @@
                               <h4>This is for proof-of-concept purposes only! Not for legal use!</h4><br />
                       </div><!-- header -->
                       
-                      <div><!-- form wrapper -->  
-                         <form autocomplete="off" action="/">
-                         
-                              <label for="name">Your Name:</label><br />  
-                              <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
+                <div><!-- form wrapper -->  
+                   <form autocomplete="off">
 
-                                <div class="autocomplete">
-                                 <label for="myState">State of Residence:</label><br /> 
-                                 <input id="myState" type="text" name="myState"><br /> 
-                                </div><br /> 
-                              
-                              <label for="date">Date of Birth:</label><br /> 
-                              <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
+                        <label for="name">Your Name:</label><br />  
+                        <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
-                              <label for="email">Email:</label><br />  
-                              <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+                          <div class="autocomplete">
+                           <label for="myState">State of Residence:</label><br /> 
+                           <input id="myState" type="text" name="myState"><br /> 
+                          </div><br /> 
 
-                              <label for="phone">Contact Phone:</label><br />  
-                              <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+                        <label for="date">Date of Birth:</label><br /> 
+                        <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
-                            <div style="margin-top:25px;"><!-- submit button wrapper --> 
-                              <input type="submit">
-                            <!-- submit button wrapper -->     
-                         </form>
-                      </div><!-- form wrapper-->   
+                        <label for="email">Email:</label><br />  
+                        <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+
+                        <label for="phone">Contact Phone:</label><br />  
+                        <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+
+                      <div style="margin-top:25px;"><!-- submit button wrapper --> 
+                        <input type="submit">
+                      <!-- submit button wrapper -->     
+                   </form>
+                </div><!-- form wrapper-->   
               <script>
                function autocomplete(inp, arr) {
                  /*the autocomplete function takes two arguments,
@@ -223,7 +223,7 @@
 <!-- <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script> -->
 <script>
   // Initialize Firebase for Video
-  var config = {
+  var config1 = {
     apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
     authDomain: "hackathon-video-chat.firebaseapp.com",
     databaseURL: "https://hackathon-video-chat.firebaseio.com",
@@ -231,10 +231,10 @@
     storageBucket: "hackathon-video-chat.appspot.com",
     messagingSenderId: "633008113206"
   };
-  firebase.initializeApp(config);
+  firebase.initializeApp(config1);
 
   // Initialize Firebase Chatbot
-  var config = {
+  var config2 = {
     apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
     authDomain: "virtualclinicprototype.firebaseapp.com",
     databaseURL: "https://virtualclinicprototype.firebaseio.com",
@@ -242,10 +242,10 @@
     storageBucket: "virtualclinicprototype.appspot.com",
     messagingSenderId: "314092904355"
   };
-  firebase.initializeApp(config);
+  firebase.initializeApp(config2);
 
   // Initialize Firebase for Initial Intake Form
-  var config = {
+  var config3 = {
     apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
     authDomain: "initialintakeform.firebaseapp.com",
     databaseURL: "https://initialintakeform.firebaseio.com",
@@ -253,6 +253,6 @@
     storageBucket: "initialintakeform.appspot.com",
     messagingSenderId: "51123204676"
   };
-  firebase.initializeApp(config);
+  firebase.initializeApp(config3);
 </script>
 </html>
