@@ -15,7 +15,8 @@ function submitForm(e) {
   var myState = getInputVal('myState');
   var dateOfBirth = getInputVal('dateOfBirth');
   var email = getInputVal('email');
-  var phone = getInputVal('phone');  
+  var phone = getInputVal('phone');
+  console.log(name);
 }
 
 function getInputVal(id) {
