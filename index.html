@@ -230,10 +230,8 @@
     storageBucket: "hackathon-video-chat.appspot.com",
     messagingSenderId: "633008113206"
   };
-  firebase.initializeApp(config1);
-     </script>
-     
-     <script>
+  //firebase.initializeApp(config1);
+
   // Initialize Firebase Chatbot
   var config2 = {
     apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
@@ -243,10 +241,8 @@
     storageBucket: "virtualclinicprototype.appspot.com",
     messagingSenderId: "314092904355"
   };
-  firebase.initializeApp(config2);
-     </script>
-     
-     <script>
+  //firebase.initializeApp(config2);
+
   // Initialize Firebase for Initial Intake Form
   var config3 = {
     apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
@@ -256,7 +252,8 @@
     storageBucket: "initialintakeform.appspot.com",
     messagingSenderId: "51123204676"
   };
-  firebase.initializeApp(config3);
+   firebase.initializeApp(config1, config2, config3);
+  //firebase.initializeApp(config3);
 
 </script>
 </html>
