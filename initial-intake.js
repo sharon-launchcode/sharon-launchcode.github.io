@@ -1,13 +1,3 @@
-var config = {
-  apiKey: "xxxxx",
-  authDomain: "xxxxx",
-  databaseURL: "xxxxx",
-  projectId: "xxxxx",
-  storageBucket: "xxxxx",
-  messagingSenderId: "xxxxx"
-};
-firebase.initializeApp(config);
-/////
   // Initialize Firebase for Initial Intake Form
   var config3 = {
     apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
@@ -17,8 +7,8 @@ firebase.initializeApp(config);
     storageBucket: "initialintakeform.appspot.com",
     messagingSenderId: "51123204676"
   };
+firebase.initializeApp(config3);
 
-//////
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
 
