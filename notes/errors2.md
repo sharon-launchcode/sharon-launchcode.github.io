@@ -17,3 +17,28 @@
 ###### EventTarget
 ###### EventTarget # addEventListener()
 ###### These are inteded for use only on DOM elements. By adding it to the iSubmit object as a method, you're calling it on an object that is not an EventTarget. This is why Chrome throws an Uncaught TypeError: Illegal invocation JavaScript error.
+
+##### EXCERPT THREE:
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <script src="bundle.js"></script>
+      </head>
+      <body>
+        <script>
+          // 1. Create a new instance
+          const myObject = new window.CustomObject();
+
+          // 2. Subscribe to events with ID "myEventName"
+          myObject.on('myEventName', function(event) {
+            console.log('Received event', event);
+          });
+
+          // 3. Trigger the event emitter
+          myObject.doSomething();
+        </script>
+      </body>
+    </html>
