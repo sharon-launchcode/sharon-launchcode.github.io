@@ -110,8 +110,8 @@
                     //Commenting out submitForm in response to error
                     //Uncaught TypeError: Failed to execute 'addEventListener' on 'EventTarget': 
                     //The callback provided as parameter 2 is not an object.at (index):111   
-                    document.getElementById('contactForm').addEventListener('submit');
-                     function submitForm(e) {
+                    document.getElementById('contactForm').addEventListener('submit', 'submitForm');
+                     var submitForm = function submitForm(e) {
                        e.preventDefault();
                        console.log('test');
                        //Get the input values
