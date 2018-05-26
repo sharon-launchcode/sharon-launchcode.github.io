@@ -272,8 +272,8 @@
     storageBucket: "initialintakeform.appspot.com",
     messagingSenderId: "51123204676"
   };
-   
-   var messagesRef = firebase.database().ref();
+
+   var messagesRef = initialintakeform.firebase.database().ref('messages');
    firebase.initializeApp(config1, config2, config3);
   //firebase.initializeApp(config3);
 </script>
