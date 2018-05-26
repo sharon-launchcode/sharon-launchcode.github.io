@@ -282,6 +282,12 @@
 
    </script>
     <script>
+         $(document).ready(function() {
+             if ($('#contactForm').length > 0 ) {
+                 contactScript('forcontact');
+             }
+         });
+       
        function contactScript(value) {
           var a = { 
                apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
@@ -292,7 +298,7 @@
                 messagingSenderId: "51123204676" };
           firebase.initializeApp(a);
           var b = firebase.database().ref("messages");
-              $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
+              $("#contactForm").submit(function(a) { $(this), console.log("Submit to Firebase");
               var c = $("#name").val(),
                   d = $("#email").val(),
                   f = { name: c, email: d};
