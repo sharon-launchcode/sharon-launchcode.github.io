@@ -26,29 +26,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
  </head>
 </head>     
-  <body onload="showMyFace()">
-
-       <div class="row">
-       <div class="container">
-            <div class="col-md-4"><!-- contains chat -->
-           <iframe
-              width="350"
-              height="430"
-              src="https://console.dialogflow.com/api-client/demo/embedded/2826f62d-5973-4ab8-b5c8-84a4d026e807">
-          </iframe>
-            </div><!-- col md 6 -->       
-              <div class="col-md-8">
-                   <h1>Proof of Concept: Virtual Legal Clinic</h1><br />
-                   <video id="yourVideo" autoplay muted playsinline></video>
-                   <video id="friendsVideo" autoplay playsinline></video>
-                   <br />
-                   <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
-                   <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
-                   <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
-                   <script src="js/script.js"></script>
-                </div><!-- col-md  6 -->
-            </div><!-- container -->  
-       </div><!-- row -->
+  <body>
        
        
        <div class="row" style="margin-top:50px;">
@@ -98,12 +76,12 @@
                               <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
                                 <div class="autocomplete">
-                                 <label for="myState">State of Residence:</label><br /> 
-                                 <input id="myState" type="text" name="myState"><br /> 
+                                 <label for="state">State of Residence:</label><br /> 
+                                 <input id="state" type="text" name="state"><br /> 
                                 </div><br /> 
                               
-                              <label for="date">Date of Birth:</label><br /> 
-                              <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
+                              <label for="dateOfBirth">Date of Birth:</label><br /> 
+                              <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
                               <label for="email">Email:</label><br />  
                               <input name="email" id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
@@ -228,54 +206,4 @@
        </div><!-- row for intake form -->
   </body>
 
-<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script> -->
-
-<script>
-
- <!--      
-<script>
-  // Initialize Firebase for Initial Intake Form
-  var config = {
-    apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
-    authDomain: "initialintakeform.firebaseapp.com",
-    databaseURL: "https://initialintakeform.firebaseio.com",
-    projectId: "initialintakeform",
-    storageBucket: "initialintakeform.appspot.com",
-    messagingSenderId: "51123204676"
-  };
-  firebase.initializeApp(config);
-  var database = firebase.database();
-</script>
- -->    
-     
-     ////second attempt
-     <script type="text/javascript">
-$(document).ready(function() {
-    if ($('#newContact').length > 0 ) {
-        contactScript('forcontact');
-    }
-});
-//firebase
-function contactScript(value) {
-    var a = { 
-    apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
-    authDomain: "initialintakeform.firebaseapp.com",
-    databaseURL: "https://initialintakeform.firebaseio.com",
-    projectId: "initialintakeform",
-    storageBucket: "initialintakeform.appspot.com",
-    messagingSenderId: "51123204676" };
-    firebase.initializeApp(a);
-   var database = firebase.database();
-    var b = firebase.database().ref("messages");
-        $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
-        var c = $("#name").val(),
-            d = $("#email").val(),
-            f = { name: c, email: d};
-        return b.push(f).then(function(a) { 
-            $(".sucess").css("display", "block"), 
-            $(".sucess-none").css("display", "none") }), !1 })   
-}
-</script>
-     ////end second attempt
 </html>
