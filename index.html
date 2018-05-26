@@ -84,7 +84,8 @@
                         <label for="name">Your Name:</label><br />  
                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
-                         <div class="autocomplete">
+                         <!-- temp remove class of auto complete <div class="autocomplete"> -->
+                         <div>   
                            <label for="myState">State of Residence:</label><br /> 
                            <input id="myState" type="text" name="myState"><br /> 
                          </div><br /> 
@@ -108,7 +109,7 @@
                        
                        // Shortcuts to DOM Elements.
                        var name = document.getElementById('name');
-                       //var myState = document.getElementById('myState');
+                       var myState = document.getElementById('myState');
                        var dateOfBirth = document.getElementById('dateOfBirth');
                        var email = document.getElementById('email');
                        var phone = document.getElementById('phone');
@@ -117,7 +118,7 @@
                        function submitForm(e) {
                        e.preventDefault();
                        console.log(name);
-                       //console.log(myState);
+                       console.log(myState);
                        console.log(dateOfBirth);
                        console.log(email);
                        console.log(phone);                                                    
