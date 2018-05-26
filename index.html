@@ -72,33 +72,44 @@
                      
                  </div><!-- col md-4 for uploading documents -->
                  
+ 
                  <div class="col-md-8"><!-- intake form -->
                       <div style="text-align:center;"><!-- header -->
                          <header><h3>Initial Intake Form</h3></header>
                               <h4>Please fill out the contact form in case we lose the video connection.</h4> 
                               <h4>This is for proof-of-concept purposes only! Not for legal use!</h4><br />
-                      </div><!-- header -->                     
-                <div><!-- form wrapper -->  
-                   <form id="contactForm" autocomplete="off">
-    
-                        <label for="name">Your Name:</label><br />  
-                        <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
-                  
-                        <label for="dateOfBirth">Date of Birth:</label><br /> 
-                        <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
+                      </div><!-- header -->
+                      
+                      <div><!-- form wrapper -->  
+                         <form id="contactForm" autocomplete="off">
+                            
+                            <div class="alert">Alerts Go here</div>
+                         
+                              <label for="name">Your Name:</label><br />  
+                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
-                        <label for="email">Email:</label><br />  
-                        <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+                                <div>
+                                 <label for="state">State of Residence:</label><br /> 
+                                 <input id="state" type="text" name="state"><br /> 
+                                </div><br /> 
+                              
+                              <label for="dateOfBirth">Date of Birth:</label><br /> 
+                              <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
-                        <label for="phone">Contact Phone:</label><br />  
-                        <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+                              <label for="email">Email:</label><br />  
+                              <input name="email" id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
 
-                      <div style="margin-top:25px;"><!-- submit button wrapper --> 
-                         <button type="submit" class="btn btn-primary btn-lg">Submit Initial Intake Form</button>
-                      </div><!-- submit button wrapper -->     
-                   </form>
-                </div><!-- form wrapper-->
-          </div><!-- col md 8 for initial intake form -->                       
+                              <label for="phone">Contact Phone:</label><br />  
+                              <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+
+                            <div style="margin-top:25px;"><!-- submit button wrapper --> 
+                                <input type="submit" class="btn" value="Submit" name="submit" id="submitInitial">
+                            <!-- submit button wrapper -->     
+                         </form>
+                      </div><!-- form wrapper--> 
+                         
+   
+                 </div><!-- col md 8 for initial intake form -->                       
         </div><!-- container for intake form -->
        </div><!-- row for intake form -->
      
