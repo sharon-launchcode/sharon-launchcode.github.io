@@ -31,36 +31,6 @@
        
        <div class="row" style="margin-top:50px;">
             <div class="container">
-                 <div class="col-md-4"><!-- upload -->                 
-                <!-- version one    
-                 <button onclick="uploadFunction()" style="width:50px;">Upload</button>
-                    <script>
-                         function uploadFunction() {
-                             var uploadfile = document.createElement("INPUT");
-                             uploadfile.setAttribute("type", "file");
-                             document.body.appendChild(uploadfile);
-                         }
-                    </script> 
-                     --->
-                      <!-- version 2 -->
-               <form enctype="multipart/form-data" action="" method="post">
-                   <p>Upload file(s)</p>
-                   <div id="files">
-                       <p><input type="file" name="uploaded_file[]" /></p>
-                   </div>
-                   <p><input type="button" value="Add File" onclick="addFile();" /></p>
-               </form>
-                      
-                      <script>
-                      var fileId = 0; // used by the addFile() function to keep track of IDs
-                      function addFile() {
-                        fileId++; // increment fileId to get a unique ID for the new element
-                        var html = '<input type="file" name="uploaded_files[]" /> ' +
-                                   '<a href="" onclick="javascript:removeElement('file-' + fileId + ''); return false;">Remove</a>';
-                        addElement('files', 'p', 'file-' + fileId, html);
-                    }
-                      </script>                      
-                 </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
                       <div style="text-align:center;"><!-- header -->
@@ -201,11 +171,46 @@
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
                </script>
-                 </div><!-- col md 8 for initial intake form -->      
+                 </div><!-- col md 8 for initial intake form --> 
+                    
+                    
+                 <div class="col-md-4"><!-- upload -->                 
+                <!-- version one    
+                 <button onclick="uploadFunction()" style="width:50px;">Upload</button>
+                    <script>
+                         function uploadFunction() {
+                             var uploadfile = document.createElement("INPUT");
+                             uploadfile.setAttribute("type", "file");
+                             document.body.appendChild(uploadfile);
+                         }
+                    </script> 
+                     --->
+                      <!-- version 2 -->
+               <form enctype="multipart/form-data" action="" method="post">
+                   <p>Upload file(s)</p>
+                   <div id="files">
+                       <p><input type="file" name="uploaded_file[]" /></p>
+                   </div>
+                   <p><input type="button" value="Add File" onclick="addFile();" /></p>
+               </form>
+                      
+                      <script>
+                      var fileId = 0; // used by the addFile() function to keep track of IDs
+                      function addFile() {
+                        fileId++; // increment fileId to get a unique ID for the new element
+                        var html = '<input type="file" name="uploaded_files[]" /> ' +
+                                   '<a href="" onclick="javascript:removeElement('file-' + fileId + ''); return false;">Remove</a>';
+                        addElement('files', 'p', 'file-' + fileId, html);
+                    }
+                      </script>                      
+                 </div><!-- col md-4 for uploading documents -->
+                    
+                    
+                    
             </div><!-- container for intake form -->
        </div><!-- row for intake form -->
-          <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-  <script src="main.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="intake-initial.js"></script>
   </body>
 
 </html>
