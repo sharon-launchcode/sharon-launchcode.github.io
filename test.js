@@ -10,5 +10,14 @@ document.getElementById('contactForm').addEventListener('submit','submitForm');
 function submitForm(e) {
   e.preventDefault();
   console.log('test');
+  //Get the input values
+  var name = getInputVal('name');
+  var email = getInputVal('email');
+  var myState = getInputVal('myState');
+  
 }
 
+function getInputVal(id) {
+  return document.getElementById(id).value;
+  //make sure and add the VALUE because that is what you need from the form
+}
