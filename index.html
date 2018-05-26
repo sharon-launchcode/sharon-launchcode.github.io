@@ -107,9 +107,13 @@
                     //////console log test/////
                     <script>  
                     document.getElementById('contactForm').addEventListener('submit', 'submitForm');
-                    function submitForm(e) {
+                       //
+                       var submitForm = new Function();  // A new Function object
+                       //added above in response to error message saying second parameter was not an object
+                       function submitForm(e) {
                        e.preventDefault();
                        console.log('test');
+                       
                        //Get the input values
                        var name = getInputVal('name');
                        var myState = getInputVal('myState');
