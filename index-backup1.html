@@ -49,8 +49,6 @@
                 </div><!-- col-md  6 -->
             </div><!-- container -->  
        </div><!-- row -->
-       
-       
        <div class="row" style="margin-top:50px;">
             <div class="container">
                  <div class="col-md-4"><!-- upload -->                 
@@ -79,21 +77,20 @@
                          <header><h3>Initial Intake Form</h3></header>
                               <h4>Please fill out the contact form in case we lose the video connection.</h4> 
                               <h4>This is for proof-of-concept purposes only! Not for legal use!</h4><br />
-                      </div><!-- header -->
-                      
+                      </div><!-- header -->                     
                 <div><!-- form wrapper -->  
-                   <form autocomplete="off">
+                   <form id="contactForm" autocomplete="off">
 
                         <label for="name">Your Name:</label><br />  
                         <input id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
-                          <div class="autocomplete">
+                         <div class="autocomplete">
                            <label for="myState">State of Residence:</label><br /> 
                            <input id="myState" type="text" name="myState"><br /> 
-                          </div><br /> 
+                         </div><br /> 
 
-                        <label for="date">Date of Birth:</label><br /> 
-                        <input id="date" type="date" x-moz-errormessage="Please specify a valid date."><br />
+                        <label for="dateOfBirth">Date of Birth:</label><br /> 
+                        <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
                         <label for="email">Email:</label><br />  
                         <input id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
@@ -102,10 +99,34 @@
                         <input id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
                       <div style="margin-top:25px;"><!-- submit button wrapper --> 
-                        <input type="submit">
-                      <!-- submit button wrapper -->     
+                         <button type="submit" class="btn btn-primary btn-lg">Submit Initial Intake Form</button>
+                      </div><!-- submit button wrapper -->     
                    </form>
-                </div><!-- form wrapper-->   
+                </div><!-- form wrapper-->
+                    <!--  https://github.com/firebase/quickstart-js/blob/master/database/scripts/main.js -->
+                    <script>  
+                       
+                       // Shortcuts to DOM Elements.
+                       //var name = document.getElementById('name');
+                       //var myState = document.getElementById('myState');
+                       //var dateOfBirth = document.getElementById('dateOfBirth');
+                       //var email = document.getElementById('email');
+                       //var phone = document.getElementById('phone');
+                       // console.log(name);
+                       //document.getElementById('contactForm').addEventListener('submit', submitForm);               
+                       //function submitForm(e) {
+                       //e.preventDefault();
+                       //console.log('test');
+                          //var name = document.getElementById('name').value;
+                          //var name = document.getElementById('name').value;
+                          //var myState = document.getElementById('myState').value;
+                          //var dateOfBirth = document.getElementById('dateOfBirth').value;
+                          //var email = document.getElementById('email').value;
+                          //var phone = document.getElementById('phone').value;
+                          //console.log(name);
+                        //}
+                  </script>
+                   <!-- end revamp part five --->
               <script>
                function autocomplete(inp, arr) {
                  /*the autocomplete function takes two arguments,
@@ -207,16 +228,17 @@
                /*An array containing the 50 states:*/
                                          
           var states = ["Alabama","Alaska","Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia","Hawaii", "Idaho", "Illinois","Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland","Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon","Pennsylvania","Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont","Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"];
-
-
+                 
                /*initiate the autocomplete function on the "myInput" now "myState" element, and pass along the countries array as possible autocomplete values:*/
                /* autocomplete(document.getElementById("myInput"), countries); */
                autocomplete(document.getElementById("myState"), states);
                </script>
-                 </div><!-- col md 8 for initial intake form -->      
-            </div><!-- container for intake form -->
+          </div><!-- col md 8 for initial intake form -->                       
+        </div><!-- container for intake form -->
        </div><!-- row for intake form -->
-  </body>
+     
+   <!-- scripting for firebase starts here -->
+     
 
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 
@@ -231,7 +253,6 @@
     messagingSenderId: "633008113206"
   };
   //firebase.initializeApp(config1);
-
   // Initialize Firebase Chatbot
   var config2 = {
     apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
@@ -242,7 +263,6 @@
     messagingSenderId: "314092904355"
   };
   //firebase.initializeApp(config2);
-
   // Initialize Firebase for Initial Intake Form
   var config3 = {
     apiKey: "AIzaSyAV4773DjZcMNbfQP5Wat0kYl1gHG-lepE",
@@ -254,6 +274,6 @@
   };
    firebase.initializeApp(config1, config2, config3);
   //firebase.initializeApp(config3);
-
 </script>
+  </body>   
 </html>
