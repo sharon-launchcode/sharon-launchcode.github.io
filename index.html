@@ -79,15 +79,17 @@
                            <h4>This is for proof-of-concept purposes only! Not for legal use!</h4><br />
                       </div><!-- header -->
                       <div><!-- button to initial intake form -->
-                      <button onclick="openInitialIntake()" class="btn btn-primary btn-lg">Initial Intake Form</button>
+                         <!-- 
+                           <button onclick="openInitialIntake()" class="btn btn-primary btn-lg">Initial Intake Form</button>
                            <script>
                            function openInitialIntake() {
                                window.open("https://sharon-launchcode.github.io/intake-initial.html");
                            }
                            </script>
+ -->
                      </div>
                  
-                      <div> 
+                     <div><!-- form wrapper --> 
                          <form id="contactForm" autocomplete="off">
                             
                             <div class="alert"></div>
@@ -110,14 +112,15 @@
                               <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
                             <div style="margin-top:25px;">
-                                <input type="submit" class="btn" value="Submit" name="submit" id="submitInitial">
-                        
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit" id="submitInitial">
+                            </div><!-- submit button -->
                          </form>
-                      </div>
-                         
-   
-                 </div><!-- col md 8 for initial intake form -->                       
-        </div><!-- container for intake form -->
+                        
+                      </div><!-- form wrapper -->  
+                    
+               </div><!-- col md 8 for initial intake form -->   
+               
+         </div><!-- container for intake form -->
        </div><!-- row for intake form -->
      
    <!-- scripting for firebase starts here -->
