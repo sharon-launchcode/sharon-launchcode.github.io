@@ -77,8 +77,17 @@
                       <div style="text-align:center;"><!-- header -->
                            <h4>Please fill out the contact form in case we lose the video connection.</h4> 
                            <h4>This is for proof-of-concept purposes only! Not for legal use!</h4><br />
-                      </div><!-- header -->                
-                      <div><!-- form wrapper --> 
+                      </div><!-- header -->
+                      <div><!-- button to initial intake form -->
+                      <button onclick="openInitialIntake()" class="btn btn-primary btn-lg">Initial Intake Form</button>
+                           <script>
+                           function openInitialIntake() {
+                               window.open("https://sharon-launchcode.github.io/intake-initial.html");
+                           }
+                           </script>
+                     </div>
+                 
+                      <div> 
                          <form id="contactForm" autocomplete="off">
                             
                             <div class="alert"></div>
@@ -86,8 +95,10 @@
                               <label for="name">Your Name:</label><br />  
                               <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />  
 
-                              <label for="state">State of Residence:</label><br /> 
-                              <input id="state" type="text" name="state"><br /> 
+                                <div>
+                                 <label for="state">State of Residence:</label><br /> 
+                                 <input id="state" type="text" name="state"><br /> 
+                                </div><br /> 
                               
                               <label for="dateOfBirth">Date of Birth:</label><br /> 
                               <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
@@ -99,22 +110,21 @@
                               <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
                             <div style="margin-top:25px;">
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit" id="submitInitial">
-                            </div><!-- submit button -->
-                         
-                         </form>
+                                <input type="submit" class="btn" value="Submit" name="submit" id="submitInitial">
                         
-                      </div><!-- form wrapper -->  
-                    
-               </div><!-- col md 8 for initial intake form -->   
-               
-         </div><!-- container for intake form -->
+                         </form>
+                      </div>
+                         
+   
+                 </div><!-- col md 8 for initial intake form -->                       
+        </div><!-- container for intake form -->
        </div><!-- row for intake form -->
      
-<!-- scripting for firebase starts here -->
+   <!-- scripting for firebase starts here -->
+
+
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-<script src="intake-initial.js"></script>
-     
+
 <script>
   // Initialize Firebase for Video
   //var config1 = {
@@ -135,10 +145,11 @@
     storageBucket: "virtualclinicprototype.appspot.com",
     messagingSenderId: "314092904355"
   };
-  firebase.initializeApp(config2);
-   //firebase.initializeApp(config1, config2);
-   //firebase.initializeApp(config3); 
-</script>
+  //firebase.initializeApp(config2);
 
+   //firebase.initializeApp(config1, config2);
+  //firebase.initializeApp(config3); 
+</script>
+     <script src="intake-initial.js"></script>
   </body>   
 </html>
