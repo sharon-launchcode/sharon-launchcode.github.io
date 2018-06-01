@@ -6,5 +6,7 @@
 
 #### Denormalizing Your Data is Normal
 #### https://firebase.googleblog.com/2013/04/denormalizing-your-data-is-normal.html
-### NOTE OLD BUT WORTH READING
+#### NOTE THIS ARTICLE FROM 2013 IS OLD BUT WORTH READING
 
+#### NOSQL DATA MODELING TECHNIQUES
+#### https://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/
