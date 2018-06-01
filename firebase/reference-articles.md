@@ -4,3 +4,7 @@
 #### What's the best way of structuring data on firebase?
 #### https://stackoverflow.com/questions/16421179/whats-the-best-way-of-structuring-data-on-firebase?rq=1
 
+#### Denormalizing Your Data is Normal
+#### https://firebase.googleblog.com/2013/04/denormalizing-your-data-is-normal.html
+### NOTE OLD BUT WORTH READING
+
