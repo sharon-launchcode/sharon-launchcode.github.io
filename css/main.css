@@ -5,13 +5,11 @@ video {
   width: 320px;
   height: 240px;
 }
-video-header {
+.video-header {
   background-color: #000;
   color: #fff;
   border-radius: 7px;
   margin: 10px 0px 0px 10px;
-  width: 320px;
-  height: 240px;
 }
 
 button {
