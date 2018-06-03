@@ -12,7 +12,7 @@
 1. Use a "mix" of authorization and authentication technologies and protocols.  Some technologies are wide open to ensure quick and easy access, so that even illiterate, ill, injured or isolated clients could talk to someone without a need to sign in, if necessary.  However, for long-term service, and especially for HIPAA and other privacy concerns,  authentication and authorization technologies are employed at different times and different locations.
 1. Off the shelf technology is used.  For example, to upload documents, Slack is used; attendant to that is all the authentication technologies used by Slack.
 
-![Screenshot showing Slack Sign In Page](/images/SignInToSlack)
+![Screenshot showing Slack Sign In Page](/images/SignInToSlack.png)
 
 ### Special Thanks to: 
 ### Abhijeet Chavan | Joseph Schieffer | Sam Harden | Brian Stewart | Jack Haycock | Jessica Rae | Kimi deMent | 
