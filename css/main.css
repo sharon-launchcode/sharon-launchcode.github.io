@@ -23,10 +23,12 @@ button {
 margin-top:25px;
 }
 .go-slack {
-background-color: #dedfe0;
+background-color: #000;
+  color:#fff;
 }
 .initial-contact {
-background-color: #dedfe0;
+background-color: #000;
+  color:#fff;
 }
 
 /* Below is Bootstrap4 styling */
