@@ -8,8 +8,8 @@ video {
 .video-header {
   background-color: #000;
   color: #fff;
-  border-radius: 7px;
-  margin: 10px 0px 0px 10px;
+  margin: 5px 0px 0px 10px !important;
+  width: 654px;
 }
 
 button {
