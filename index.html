@@ -86,7 +86,8 @@
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
-                         <form id="contactForm" autocomplete="off">
+                         <form id="contactForm" autocomplete="off" onsubmit="submit.disabled = true;return true;">
+                            <!-- onsubmit="submit.disabled = true;return true; disables submit button upon submit to prevent double submissions -->                                                 
                             <div style="text-align:center;">
                             <header><h3>Let's keep in contact!</h3><header>
                             <h4>Fill out the form below in case we lose the video connection.</h4>
