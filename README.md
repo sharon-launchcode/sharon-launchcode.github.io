@@ -49,6 +49,10 @@
 ### About the Source Code:
 #### Significant portions of the code used in this project were based on the tutorials provided by the following sources, or work done by individuals, with great gratitude towards the authors:
 
+### Art of the Web
+##### JavaScript: Preventing Double Form Submission
+##### https://www.the-art-of-web.com/javascript/doublesubmit/
+
 ### Brad Traversy -- Please support him on Paetron
 ##### https://github.com/bradtraversy/firebasecontact
 
