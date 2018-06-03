@@ -19,6 +19,12 @@ button {
   margin: 5px 0px 0px 10px !important;
   width: 654px;
 }
+.go-slack {
+background-color: #dedfe0;
+}
+.initial-contact {
+background-color: #dedfe0;
+}
 /* Below is Bootstrap4 styling */
 /* http://getbootstrap.com/docs/4.1/layout/overview/ */
 // Extra small devices (portrait phones, less than 576px)
