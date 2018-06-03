@@ -91,15 +91,19 @@
 
                           function checkForm(form) // Submit button clicked
                           {
-                            //
-                            // check form input values
-                            //
+                               if(form.email.value == "") {
+                                 alert("Please enter a valid email address");
+                                 form.email.focus();
+                                 return false;
+                               }
+
+                               return true;
 
                             form.submitInitial.disabled = true;
-                            form.submitInitial.value = "Please wait...";
+                            form.submitInitial.value = "Please wait...We are submitting your information";
                             return true;
-                          }
-
+                          }           
+                               
                           function resetForm(form) // Reset button clicked
                           {
                             form.submitInitial.disabled = false;
@@ -128,8 +132,8 @@
                               <label for="dateOfBirth">Date of Birth:</label><br /> 
                               <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
-                              <label for="email">Email:</label><br />  
-                              <input name="email" id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
+                              <label for="email">Email: This is required!</label><br />  
+                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address."><br />
 
                               <label for="phone">Contact Phone:</label><br />  
                               <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
