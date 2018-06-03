@@ -53,47 +53,37 @@
        <div class="row" style="margin-top:50px;">
             <div class="container">
                  <div class="col-md-4"><!-- upload -->                 
-                <!-- version one    
-                 <button onclick="uploadFunction()" style="width:50px;">Upload</button>
-                    <script>
-                         function uploadFunction() {
-                             var uploadfile = document.createElement("INPUT");
-                             uploadfile.setAttribute("type", "file");
-                             document.body.appendChild(uploadfile);
-                         }
-                    </script> 
-                  <form enctype="multipart/form-data" action="" method="post">
-                      <p>Upload file</p>
-                      <div id="files">
-                          <p><input type="file" name="uploaded_file[]" /></p>
-                      </div>
-                  </form> 
-                     --->
-                    <div style="text-align:center">
+
+                   <div style="text-align:center">
                        <h3>Need to upload Documents?</h3>
                        <h4>We use Slack!</h4>
-                       <h4>Post your document to: #sharon-testing</h4>
-                       <!-- @TODO make this an actual button for accessibility -->
-                       
+                       <h4>LOG IN with your account and post to: #sharon-testing</h4>
+                      <h4>Don't have an account?  Get one here!</h4>
                        <form>
-<input class="btn btn-primary btn-lg" type="button" value="Go to SLACK" onclick="window.location.href='https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=342068113523.371240123760'" />
-</form>
-                       
-                                              
-                       
-<!-- bot seems a lot slower possibly due to srcset
- <a href="https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=342068113523.371240123760"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a> -->
-                    </div>
+                        <input class="btn btn-primary btn-lg" type="button" value="Go to SLACK"    onclick="window.location.href='https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=342068113523.371240123760'" />
+                        </form>                                                                 
+                   </div>
     
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
+                    <script>
+                    var error = document.querySelector('.error');
+                    var alert = document.querySelector('.alert');
+                    </script>
+                    
                          <form id="contactForm" autocomplete="off">
+                                                
                             <div style="text-align:center;">
-                            <header><h3>Let's keep in contact!</h3><header>
-                            <h4>Fill out the form below in case we lose the video connection.</h4>
+                               <header><h3>INITIAL CONTACT FORM</h3><header>
+                               <h4>Let's keep in contact!  At a minimum, we need an email address in case we lose connection on the video chat.</h4>
                             </div>
-                            <div class="alert"></div>
+                                  
+                            <div class="alert" aria-live="polite"></div>
+                                  
+                              
+                              <label for="email">Email: This is required!</label><br />  
+                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address."><br />    
                          
                               <label for="name">Your Name:</label><br />  
                               <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />
@@ -104,14 +94,12 @@
                               <label for="dateOfBirth">Date of Birth:</label><br /> 
                               <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
-                              <label for="email">Email:</label><br />  
-                              <input name="email" id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
 
                               <label for="phone">Contact Phone:</label><br />  
                               <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
                               <div style="margin-top:25px;">
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit" id="submitInitial">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submitInitial" id="submitInitial">
                         
                          </form>
                       </div>
