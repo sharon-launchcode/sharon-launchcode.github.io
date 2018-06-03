@@ -67,16 +67,19 @@
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
+                    <script>
+                    var error = document.querySelector('.error');
+                    var alert = document.querySelector('.alert');
+                    </script>
                     
                          <form id="contactForm" autocomplete="off">
                                                 
                             <div style="text-align:center;">
                                <header><h3>INITIAL CONTACT FORM</h3><header>
                                <h4>Let's keep in contact!  At a minimum, we need an email address in case we lose connection on the video chat.</h4>
-                               <h5>Have an account with us?  LOG IN!</h5>
                             </div>
                                   
-                            <div class="alert"></div>
+                            <div class="alert" aria-live="polite"></div>
                                   
                               
                               <label for="email">Email: This is required!</label><br />  
