@@ -86,6 +86,31 @@
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
+                    /////
+                    <script type="text/javascript">
+
+                          function checkForm(form) // Submit button clicked
+                          {
+                            //
+                            // check form input values
+                            //
+
+                            form.submitInitial.disabled = true;
+                            form.submitInitial.value = "Please wait...";
+                            return true;
+                          }
+
+                          function resetForm(form) // Reset button clicked
+                          {
+                            form.submitInitial.disabled = false;
+                            form.submitInitial.value = "Submit";
+                          }
+
+                   </script>
+                    
+                    
+                    /////
+                    
                          <form id="contactForm" autocomplete="off" onsubmit="return checkForm(this);">
                                                 
                             <div style="text-align:center;">
@@ -110,7 +135,7 @@
                               <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
                               <div style="margin-top:25px;">
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit" id="submitInitial">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submitInitial" id="submitInitial">
                         
                          </form>
                       </div>
