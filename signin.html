@@ -19,7 +19,7 @@
   </noscript>
 <![endif]-->
 <head>
-  <title>Proof of Concept | Initial Intake Form</title>
+  <title>Proof of Concept | Sign In Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/autocomplete.css">
@@ -36,7 +36,7 @@
                     var alert = document.querySelector('.alert');
                     </script>
                     
-                         <form id="contactForm" autocomplete="off">
+                         <form id="signinForm" autocomplete="off">
                                                 
                             <div style="text-align:center;">
                                <header><h3>INITIAL INTAKE FORM</h3><header>
@@ -44,37 +44,35 @@
                             </div>
                                   
                             <div class="alert" aria-live="polite"></div>
-                              
-                              <label for="email">Email: This is required!</label><br />  
-                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address."><br />    
-                         
-                                                          
-                              <label for="state">State of Residence:</label><br /> 
-                              <input id="state" type="text" name="state"><br /> 
                                   
                               <label for="name">Your Name:</label><br />  
-                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name." aria-live="polite"><br />
-
-                               
-                              <label for="dateOfBirth">Date of Birth:</label><br /> 
-                              <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
-
-
-                              <label for="phone">Contact Phone:</label><br />  
-                              <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
+                              <input name="name" id="name" type="text" required x-moz-errormessage="Please specify a name." aria-live="polite"><br />    
+                              
+                              <label for="state">State of Residence:</label><br /> 
+                              <input name="state" id="state" type="text" required ><br /> 
+                                  
+                              <label for="email">Email:</label><br />  
+                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address."><br />    
+                         
+                              <label for="password1">Password:</label><br />  
+                              <input name="password1" id="password1" type="password" x-moz-errormessage="Passwords must be no fewer than 14 characters.  Think of a phrase that is important to you."><br />
+                                  
+                              <label for="password1">Confirm Password:</label><br />  
+                              <input name="password1" id="password1" type="password" x-moz-errormessage="Passwords must match"><br />    
+                                  
                                   
                               <div style="margin-top:25px;">
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submitInitial" id="submitInitial">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submitsignin" id="submitsignin">
                         
                          </form>
                       </div>
                          
-                 </div><!-- col md 12 for initial intake form -->                       
-        </div><!-- container for intake form -->
-       </div><!-- row for intake form -->
+                 </div><!-- col md 12 for signin form -->                       
+        </div><!-- container for signin form -->
+       </div><!-- row for signin form -->
      
 <!-- scripting for firebase starts here -->
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-<!-- <script src="intake-initial.js"></script>  _.
+<!-- <script src="signin.js"></script>  _.
   </body>   
 </html>
