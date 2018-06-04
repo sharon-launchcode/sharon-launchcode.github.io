@@ -20,11 +20,11 @@ function submitForm(e){
   e.preventDefault();
 
   // Get values
+  var email = getInputVal('email');
+  var state = getInputVal('state');
   var name = getInputVal('name');
   var dateOfBirth = getInputVal('dateOfBirth');
-  var email = getInputVal('email');
   var phone = getInputVal('phone');
-  var state = getInputVal('state');
 
   // Save message
   saveMessage(name, dateOfBirth, email, phone, state);
