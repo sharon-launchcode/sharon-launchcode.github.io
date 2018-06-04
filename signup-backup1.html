@@ -29,10 +29,22 @@
   <body>
        <div class="row">
             <div class="container">
-                 
+               
+               <script>
+               function verify(){
+                   if(document.forms[2].email.value==""){
+                       alert("Please enter a name in the field");
+                       return false;
+                       }else{
+                       alert("You have successfully submitted your information!  We will contact you through the email you have provided");
+                       return true;
+                     }
+                  }
+               </script>
+               
                  <div class="col-md-12"><!-- sign up form -->
                    
-                         <form id="signupForm" autocomplete="off">
+                         <form id="signupForm" autocomplete="off" onSubmit="return verify()">
                                                 
                             <div style="text-align:center;">
                                <header><h3>SIGN UP FOR AN ACCOUNT</h3><header>
@@ -55,7 +67,6 @@
                                   
                               <label for="password2">Confirm Password: Must follow the same criteria as above, and match the password you gave above</label><br />  
                               <input name="password2" id="password2" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{14,}" x-moz-errormessage="Passwords must match"><br />    
-                                  
                                   
                               <div style="margin-top:25px;">
                                 <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submitSignUpForm" id="submitSignUpForm">
