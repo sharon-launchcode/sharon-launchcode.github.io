@@ -27,9 +27,9 @@
  </head>
      
   <body onload="showMyFace()">
-
+     <div class="space25">&nbsp;</div><!-- holder for future accessibility notifications -->
        <div class="row">
-       <div class="container" style="margin-top:50px;">
+       <div class="container">
             <div class="col-md-4"><!-- contains chat -->
            <iframe
               width="350"
@@ -38,63 +38,62 @@
           </iframe>
             </div><!-- col md 6 -->       
               <div class="col-md-8">
-                   <h1>Proof of Concept: Virtual Legal Clinic</h1><br />
-                   <video id="yourVideo" autoplay muted playsinline></video>
-                   <video id="friendsVideo" autoplay playsinline></video>
-                   <br />
+                   <div class="video-header">
+                      <h1>Proof of Concept: Virtual Legal Clinic</h1>
+                   </div>
+                   <div>
+                      <video id="yourVideo" autoplay muted playsinline></video>
+                      <video id="friendsVideo" autoplay playsinline></video>
+                   </div>   
+                   <div>
                    <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+                   </div>   
                    <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
                    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
                    <script src="js/script.js"></script>
                 </div><!-- col-md  6 -->
             </div><!-- container -->  
        </div><!-- row -->
-  
-       <div class="row" style="margin-top:50px;">
+       <div class="space25">&nbsp;</div><!-- holder for future accessibility notifications -->
+       <div class="row">
             <div class="container">
                  <div class="col-md-4"><!-- upload -->                 
-                <!-- version one    
-                 <button onclick="uploadFunction()" style="width:50px;">Upload</button>
-                    <script>
-                         function uploadFunction() {
-                             var uploadfile = document.createElement("INPUT");
-                             uploadfile.setAttribute("type", "file");
-                             document.body.appendChild(uploadfile);
-                         }
-                    </script> 
-                  <form enctype="multipart/form-data" action="" method="post">
-                      <p>Upload file</p>
-                      <div id="files">
-                          <p><input type="file" name="uploaded_file[]" /></p>
-                      </div>
-                  </form> 
-                     --->
-                    <div style="text-align:center">
+                   <div style="text-align:center">
                        <h3>Need to upload Documents?</h3>
                        <h4>We use Slack!</h4>
-                       <h4>Post your document to: #sharon-testing</h4>
-                       <!-- @TODO make this an actual button for accessibility -->
+                       <h4>You must be registered with us</h4>
+                       <h4>LOG IN with your email account and post to: #sharon-testing</h4>
+                       <form id="goToSlackForm">
+                        <!-- <input class="btn btn-primary btn-lg" type="button" value="Go to SLACK"  onclick="window.location.href='https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=342068113523.371240123760'" /> -->
+                           <input class="btn btn-primary btn-lg" type="button" value="Go to SLACK"  onclick="window.location.href='https://slack.com/oauth/authorize?client_id=342068113523.371240123760&scope=files:read'" />
+                          
+                        </form> 
                        
-                       <form>
-<input class="btn btn-primary btn-lg" type="button" value="Go to SLACK" onclick="window.location.href='https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=342068113523.371240123760'" />
-</form>                                                                 
-                       
-<!-- bot seems a lot slower possibly due to srcset
- <a href="https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=342068113523.371240123760"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a> -->
-                    </div>
+                   </div>
     
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
+                    <script>
+                    var error = document.querySelector('.error');
+                    var alert = document.querySelector('.alert');
+                    </script>
+                    
                          <form id="contactForm" autocomplete="off">
+                                                
                             <div style="text-align:center;">
-                            <header><h3>Let's keep in contact!</h3><header>
-                            <h4>Fill out the form below in case we lose the video connection.</h4>
+                               <header><h3>INITIAL CONTACT FORM</h3><header>
+                                  <h4>Let's keep in contact!</h4>
+                                  <h4>Please give us an email address in case we lose connection on the video chat, so we can get back with you.</h4>
                             </div>
-                            <div class="alert"></div>
+                                  
+                            <div class="alert" aria-live="polite"></div>
+                              
+                              <label for="email">Email: This is required!</label><br />  
+                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address."><br />    
                          
                               <label for="name">Your Name:</label><br />  
-                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name."><br />
+                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name." aria-live="polite"><br />
                             
                               <label for="state">State of Residence:</label><br /> 
                               <input id="state" type="text" name="state"><br /> 
@@ -102,14 +101,12 @@
                               <label for="dateOfBirth">Date of Birth:</label><br /> 
                               <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
 
-                              <label for="email">Email:</label><br />  
-                              <input name="email" id="email" type="email" x-moz-errormessage="Please specify a valid email address."><br />
 
                               <label for="phone">Contact Phone:</label><br />  
                               <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
 
                               <div style="margin-top:25px;">
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit" id="submitInitial">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submitInitial" id="submitInitial">
                         
                          </form>
                       </div>
