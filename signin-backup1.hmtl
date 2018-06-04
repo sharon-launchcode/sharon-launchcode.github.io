@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <!-- source for script https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document -->
+   <!--[if lt IE 9]>
+  <script>
+    document.createElement("header" );
+    document.createElement("footer" );
+    document.createElement("section"); 
+    document.createElement("aside"  );
+    document.createElement("nav"    );
+    document.createElement("article"); 
+    document.createElement("hgroup" ); 
+    document.createElement("time"   );
+  </script>
+  <noscript>
+     <strong>Warning !</strong>
+     Because your browser does not support HTML5, some elements are created using JavaScript.
+     Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+  </noscript>
+<![endif]-->
+<head>
+  <title>Proof of Concept | Sign In Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/autocomplete.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ </head>
+     
+  <body >
+       <div class="row">
+            <div class="container">
+                 
+                 <div class="col-md-12"><!-- initial intake form -->
+                    <script>
+                    var error = document.querySelector('.error');
+                    var alert = document.querySelector('.alert');
+                    </script>
+                    
+                         <form id="signinForm" autocomplete="off">
+                                                
+                            <div style="text-align:center;">
+                               <header><h3>INITIAL INTAKE FORM</h3><header>
+                               <h4>Under Development</h4>
+                            </div>
+                                  
+                            <div class="alert" aria-live="polite"></div>
+                                  
+                              <label for="name">Your Name:</label><br />  
+                              <input name="name" id="name" type="text" required x-moz-errormessage="Please specify a name." aria-live="polite"><br />    
+                              
+                              <label for="state">State of Residence:</label><br /> 
+                              <input name="state" id="state" type="text" required ><br /> 
+                                  
+                              <label for="email">Email:</label><br />  
+                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address."><br />    
+                         
+                              <label for="password1">Password:</label><br />  
+                              <input name="password1" id="password1" type="password" x-moz-errormessage="Passwords must be no fewer than 14 characters.  Think of a phrase that is important to you."><br />
+                                  
+                              <label for="password1">Confirm Password:</label><br />  
+                              <input name="password1" id="password1" type="password" x-moz-errormessage="Passwords must match"><br />    
+                                  
+                                  
+                              <div style="margin-top:25px;">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submitsignin" id="submitsignin">
+                        
+                         </form>
+                      </div>
+                         
+                 </div><!-- col md 12 for signin form -->                       
+        </div><!-- container for signin form -->
+       </div><!-- row for signin form -->
+     
+<!-- scripting for firebase starts here -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<!-- <script src="signin.js"></script>  _.
+  </body>   
+</html>
