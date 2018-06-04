@@ -13,10 +13,10 @@
 var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
-document.getElementById('signupForm').addEventListener('submit', submitForm);
+document.getElementById('signupForm').addEventListener('submit', submitSignUpForm);
 
 // Submit form
-function submitForm(e){
+function submitSignUpForm(e){
   e.preventDefault();
 
   // Get values
