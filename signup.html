@@ -29,10 +29,25 @@
   <body>
        <div class="row">
             <div class="container">
+               
+               <SCRIPT LANGUAGE=JAVASCRIPT>
+               function verify(){
+                   if(document.forms[0].name.value==""){
+                       alert("Please enter a name in the field");
+                       return false;
+                       }else{
+                       return true;
+                     }
+                  }
+            </SCRIPT>
+               
+               
+               
+               
                  
                  <div class="col-md-12"><!-- sign up form -->
                    
-                         <form id="signupForm" autocomplete="off">
+                         <form id="signupForm" autocomplete="off" onSubmit="return verify()">
                                                 
                             <div style="text-align:center;">
                                <header><h3>SIGN UP FOR AN ACCOUNT</h3><header>
