@@ -60,6 +60,11 @@
             <div class="container">
                  <div class="col-md-4"><!-- upload -->                 
                    <div style="text-align:center">
+                     <script>
+                       var slackerror = document.querySelector('slack-error');
+                       var slackalert = document.querySelector('slack-alert');
+                    </script>
+                    <div class="alert" aria-live="polite"></div>
                        <h3>Upload Documents with Slack!</h3>
                        <h4>LOG IN with your email account and post to: #sharon-testing</h4>
                        <form id="goToSlackForm">
@@ -70,8 +75,8 @@
                  
                  <div class="col-md-8"><!-- intake form -->
                     <script>
-                       var error = document.querySelector('.error');
-                       var alert = document.querySelector('.alert');
+                       var signinerror = document.querySelector('signin-error');
+                       var signinalert = document.querySelector('signin-alert');
                     </script>
                     <div class="alert" aria-live="polite"></div>
                     <div style="text-align:center">
