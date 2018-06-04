@@ -32,11 +32,12 @@
                
                <script>
                function verify(){
-                   if(document.forms[0].name.value==""){
+                   if(document.forms[2].email.value==""){
                        alert("Please enter a name in the field");
                        return false;
                        }else{
-                       alert("You have successfully submitted your information!");
+                       alert (document.forms[2].email.value);
+                       alert("You have successfully submitted your information!  We will contact you through the email you have provided");
                        return true;
                      }
                   }
