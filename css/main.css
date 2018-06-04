@@ -30,7 +30,9 @@ background-color: #000;
 background-color: #000;
   color:#fff;
 }
-
+.large-text {
+ font-size:2em;
+} 
 /* Below is Bootstrap4 styling */
 /* http://getbootstrap.com/docs/4.1/layout/overview/ */
 // Extra small devices (portrait phones, less than 576px)
