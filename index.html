@@ -77,7 +77,7 @@
       }
       document.getElementById('quickstart-sign-in').disabled = true;
     }
-   
+  } 
    </script>
   <!-- end of authorization of signin for firebase --> 
  </head>
@@ -102,7 +102,8 @@
                       <video id="friendsVideo" autoplay playsinline></video>
                    </div>   
                    <div>
-                   <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+                      <!-- IMPORTANT REMBER TO CHANGE ID ON BUTTON -->
+                   <button id="quickstart-sign-in" onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
                    </div>   
                    <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
                    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
