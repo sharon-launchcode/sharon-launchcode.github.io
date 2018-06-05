@@ -24,6 +24,62 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/autocomplete.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+   <!-- required for auth and more -->
+   <!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+
+<!-- Add additional services you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-functions.js"></script> -->
+
+   <!-- end required for auth and more -->
+   <!-- start of authorization of signin for firebase -->
+     <script type="text/javascript">
+    /**
+     * Handles the sign in button press.
+     */
+    function toggleSignIn() {
+      if (firebase.auth().currentUser) {
+        // [START signout]
+        firebase.auth().signOut();
+        // [END signout]
+      } else {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        if (email.length < 4) {
+          alert('Please enter an email address.');
+          return;
+        }
+        if (password.length < 4) {
+          alert('Please enter a password.');
+          return;
+        }
+        // Sign in with email and pass.
+        // [START authwithemail]
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // [START_EXCLUDE]
+          if (errorCode === 'auth/wrong-password') {
+            alert('Wrong password.');
+          } else {
+            alert(errorMessage);
+          }
+          console.log(error);
+          document.getElementById('quickstart-sign-in').disabled = false;
+          // [END_EXCLUDE]
+        });
+        // [END authwithemail]
+      }
+      document.getElementById('quickstart-sign-in').disabled = true;
+    }
+   
+   </script>
+  <!-- end of authorization of signin for firebase --> 
  </head>
      
   <body onload="showMyFace()">
@@ -36,7 +92,7 @@
               height="430"
               src="https://console.dialogflow.com/api-client/demo/embedded/2826f62d-5973-4ab8-b5c8-84a4d026e807">
           </iframe>
-            </div><!-- col md 6 -->       
+            </div><!-- col md 4 -->       
               <div class="col-md-8">
                    <div class="video-header">
                       <h1>Proof of Concept: Virtual Legal Clinic</h1>
@@ -51,74 +107,70 @@
                    <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
                    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
                    <script src="js/script.js"></script>
-                </div><!-- col-md  6 -->
+                </div><!-- col-md  8 -->
             </div><!-- container -->  
        </div><!-- row -->
+      <!-- @TODO Check for possible conflict of Initial Intake Form versus authentication in signIn -->
        <div class="space25">&nbsp;</div><!-- holder for future accessibility notifications -->
        <div class="row">
             <div class="container">
                  <div class="col-md-4"><!-- upload -->                 
                    <div style="text-align:center">
-                       <h3>Need to upload Documents?</h3>
-                       <h4>We use Slack!</h4>
-                       <h4>You must be registered with us</h4>
+                     <script>
+                       var slackerror = document.querySelector('slack-error');
+                       var slackalert = document.querySelector('slack-alert');
+                    </script>
+                    <div class="alert" aria-live="polite"></div>
+                       <h3>Upload Documents with Slack!</h3>
                        <h4>LOG IN with your email account and post to: #sharon-testing</h4>
                        <form id="goToSlackForm">
-                        <!-- <input class="btn btn-primary btn-lg" type="button" value="Go to SLACK"  onclick="window.location.href='https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=342068113523.371240123760'" /> -->
-                           <input class="btn btn-primary btn-lg" type="button" value="Go to SLACK"  onclick="window.location.href='https://slack.com/oauth/authorize?client_id=342068113523.371240123760&scope=files:read'" />
-                          
-                        </form> 
-                       
-                   </div>
-    
+                       <input class="btn btn-primary btn-lg" type="button" value="Go to SLACK"  onclick="window.location.href='https://slack.com/oauth/authorize?client_id=342068113523.371240123760&scope=files:read'" /> 
+                        </form>  
+                   </div><!-- wrapper for form -->
                  </div><!-- col md-4 for uploading documents -->
                  
                  <div class="col-md-8"><!-- intake form -->
                     <script>
-                    var error = document.querySelector('.error');
-                    var alert = document.querySelector('.alert');
+                       var signinerror = document.querySelector('signin-error');
+                       var signinalert = document.querySelector('signin-alert');
                     </script>
-                    
-                         <form id="contactForm" autocomplete="off">
-                                                
-                            <div style="text-align:center;">
-                               <header><h3>INITIAL CONTACT FORM</h3><header>
-                                  <h4>Let's keep in contact!</h4>
-                                  <h4>Please give us an email address in case we lose connection on the video chat, so we can get back with you.</h4>
-                            </div>
-                                  
-                            <div class="alert" aria-live="polite"></div>
-                              
-                              <label for="email">Email: This is required!</label><br />  
-                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address."><br />    
-                         
-                              <label for="name">Your Name:</label><br />  
-                              <input name="name" id="name" type="text" x-moz-errormessage="Please specify a name." aria-live="polite"><br />
-                            
-                              <label for="state">State of Residence:</label><br /> 
-                              <input id="state" type="text" name="state"><br /> 
-                               
-                              <label for="dateOfBirth">Date of Birth:</label><br /> 
-                              <input id="dateOfBirth" type="date" x-moz-errormessage="Please specify a valid date."><br />
-
-
-                              <label for="phone">Contact Phone:</label><br />  
-                              <input name="phone" id="phone" type="tel" x-moz-errormessage="Please specify a valid phone number."><br />
-
+                    <div class="alert" aria-live="polite"></div>
+                    <div><!-- form wrapper -->
+                       <span style="text-align:center"><h3>Sign In</h3></span>   
+                         <form id="signInForm" autocomplete="off" style="text-align:center;">
+                            <div><!-- wrapper for email -->
+                              <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;  
+                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address.">
+                            </div><br /><!-- wrapper for email -->
+                            <div><!-- wrapper for password -->
+                              <label for="password">Password:</label>  
+                              <input name="password" id="password" type="password" required x-moz-errormessage="Please specify a valid email address.">
+                            </div><!-- closes wrapper for password -->
                               <div style="margin-top:25px;">
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="submitInitial" id="submitInitial">
-                        
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="signIn" id="signIn">
                          </form>
-                      </div>
-                         
-                 </div><!-- col md 8 for initial intake form -->                       
+                      </div><!-- signIn button -->
+                    </div><!-- form wrapper -->
+                 </div><!-- col md 8 for signIn form --> 
+               
         </div><!-- container for intake form -->
        </div><!-- row for intake form -->
      
 <!-- scripting for firebase starts here -->
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-
 <script>
+    // Initialize Firebase for Email sign-in
+  var config5 = {
+    apiKey: "AIzaSyBlY3OteC7Dn0y0diemxPlg62XgVMqkCHg",
+    authDomain: "signin-fcc07.firebaseapp.com",
+    databaseURL: "https://signin-fcc07.firebaseio.com",
+    projectId: "signin-fcc07",
+    storageBucket: "signin-fcc07.appspot.com",
+    messagingSenderId: "612057419132"
+  };
+  firebase.initializeApp(config5);
+   
+   
   // Initialize Firebase for Video
   //var config1 = {
     //apiKey: "AIzaSyDL-wkEdZ6nSowhkvIfyQZmOEYTcYd1e5s",
@@ -130,18 +182,18 @@
   //};
   //firebase.initializeApp(config1);
   // Initialize Firebase Chatbot
-  var config2 = {
-      apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
-      authDomain: "virtualclinicprototype.firebaseapp.com",
-      databaseURL: "https://virtualclinicprototype.firebaseio.com",
-      projectId: "virtualclinicprototype",
-      storageBucket: "virtualclinicprototype.appspot.com",
-      messagingSenderId: "314092904355"
-  };
+  //var config2 = {
+      //apiKey: "AIzaSyBoQrKt-wB0MMWw6E6NV5YognrXNCSq1aQ",
+      //authDomain: "virtualclinicprototype.firebaseapp.com",
+      //databaseURL: "https://virtualclinicprototype.firebaseio.com",
+      //projectId: "virtualclinicprototype",
+      //storageBucket: "virtualclinicprototype.appspot.com",
+      //messagingSenderId: "314092904355"
+  //};
   //firebase.initializeApp(config2);
   //firebase.initializeApp(config1, config2);
   //firebase.initializeApp(config3); 
 </script>
-     <script src="intake-initial.js"></script>
+     <!-- <script src="intake-initial.js"></script>  -->
   </body>   
 </html>
