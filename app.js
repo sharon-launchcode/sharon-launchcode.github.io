@@ -6,7 +6,6 @@
     storageBucket: "signin-fcc07.appspot.com",
     messagingSenderId: "612057419132"
   }; 
-//firebase.initializeApp(configapp);
 // Firebase Variables
 var auth = firebase.auth();
 
