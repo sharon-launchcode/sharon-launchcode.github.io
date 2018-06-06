@@ -86,22 +86,18 @@
                     
                     <div class="alert" aria-live="polite"></div>
                     <div><!-- form wrapper -->
-                       <span style="text-align:center"><h3>Sign In</h3></span>
-                     
-                         <form id="signInForm" autocomplete="off" style="text-align:center;">
-                            <div>
-                              <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;  
-                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address.">
-                            </div><br />
-                            <div>
-                              <label for="password">Password:</label>  
-                              <input name="password" id="password" type="password" required x-moz-errormessage="Please specify a valid email address.">
-                            </div>
-                              <div style="margin-top:25px;">
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="signIn" id="signIn">
-                         </form> 
-                       
-                      </div><!-- signIn button -->
+                       <span style="text-align:center"><h3>Sign In: UNDER DEVELOPMENT</h3></span>
+                            <div id="app">
+                                <input type="email" id="txtEmail" placeholder="Enter email" /> <br/>
+                                <input type="password" id="txtPassword" placeholder="Enter password" /><br/>
+                                <button id="btnLogin" >Log in</button>
+                                <button id="btnSignUp" >Sign Up</button>
+                                <button id="btnLogOut" class="hide" >Log Out</button>
+                                <button id="withFB">Log In with FaceBook</button>
+                                <button id="withGithub">Log In with GitHub</button>
+                            </div>  
+                            <div id="results"></div>
+                            <script type="text/javascript" src="script.js"></script>
                     </div><!-- form wrapper -->
                  </div><!-- col md 8 for signIn form --> 
  
