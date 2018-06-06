@@ -11,6 +11,7 @@
   // From docs: Get a reference to the database service
   // From docs: var database = firebase.database();
   
-const promise = auth.signInWithEmailAndPassword(email, pass);
-auth.createUserWithEmailAndPassword(email, pass);
+  //From the tutorial -- find out about promise https://dev.to/aurelkurtula/introduction-to-authentication-with-firebase-bkd
+  const promise = auth.signInWithEmailAndPassword(email, pass);
+  auth.createUserWithEmailAndPassword(email, pass);
  
