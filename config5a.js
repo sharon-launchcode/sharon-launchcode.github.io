@@ -1,4 +1,4 @@
-  var config5 = {
+  var config5a = {
     apiKey: "AIzaSyBlY3OteC7Dn0y0diemxPlg62XgVMqkCHg",
     authDomain: "signin-fcc07.firebaseapp.com",
     projectId: "signin-fcc07",
