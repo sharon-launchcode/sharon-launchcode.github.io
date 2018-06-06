@@ -257,14 +257,14 @@
                          <form id="signInForm" autocomplete="off" style="text-align:center;">
                             <div>
                               <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;  
-                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address.">
+                              <input name="email" id="email" type="emailHOLD" required x-moz-errormessage="Please specify a valid email address.">
                             </div><br />
                             <div>
                               <label for="password">Password:</label>  
-                              <input name="password" id="password" type="password" required x-moz-errormessage="Please specify a valid email address.">
+                              <input name="password" id="passwordHOLD" type="password" required x-moz-errormessage="Please specify a valid email address.">
                             </div>
                               <div style="margin-top:25px;">
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="signIn" id="signIn">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="signIn" id="signInHOLD">
                          </form> 
                        
                       </div><!-- signIn button -->
@@ -274,6 +274,26 @@
                     <div style="background-color:yellow;">
                        <h2>TEST AREA</h2>
                        <h3>Under development</h3>
+                                 <p>Enter an email and password below and either sign in to an existing account or sign up</p>
+
+          <input type="text" id="email" name="email" placeholder="Email"/>
+          &nbsp;&nbsp;&nbsp;
+          <input type="password" id="password" name="password" placeholder="Password"/>
+          <br/><br/>
+          <button disabled id="quickstart-sign-in" name="signin">Sign In</button>
+          &nbsp;&nbsp;&nbsp;
+          <button id="quickstart-sign-up" name="signup">Sign Up</button>
+          &nbsp;&nbsp;&nbsp;
+          <button disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+          &nbsp;&nbsp;&nbsp;
+          <button  id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+
+          <!-- Container where we'll display the user details -->
+          <div class="quickstart-user-details-container">
+            Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+            <div>Firebase auth <code>currentUser</code> object value:</div>
+            <pre><code id="quickstart-account-details">null</code></pre>
+          </div>
                     
                     </div>
                     <!-- end section for firebase authentication testing -->
