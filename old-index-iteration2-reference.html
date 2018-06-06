@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+   <!-- source for script https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document -->
+   <!--[if lt IE 9]>
+  <script>
+    document.createElement("header" );
+    document.createElement("footer" );
+    document.createElement("section"); 
+    document.createElement("aside"  );
+    document.createElement("nav"    );
+    document.createElement("article"); 
+    document.createElement("hgroup" ); 
+    document.createElement("time"   );
+  </script>
+  <noscript>
+     <strong>Warning !</strong>
+     Because your browser does not support HTML5, some elements are created using JavaScript.
+     Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+  </noscript>
+<![endif]-->
+<head>
+  <title>Proof of Concept | Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/autocomplete.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+ </head>
+  <body onload="showMyFace()">
+     <div class="space25">&nbsp;</div><!-- holder for future accessibility notifications -->
+       <div class="row">
+       <div class="container">
+            <div class="col-md-4"><!-- contains chat -->
+           <iframe
+              width="350"
+              height="430"
+              src="https://console.dialogflow.com/api-client/demo/embedded/2826f62d-5973-4ab8-b5c8-84a4d026e807">
+          </iframe>
+            </div><!-- col md 4 -->       
+              <div class="col-md-8">
+                   <div class="video-header">
+                      <h1>Proof of Concept: Virtual Legal Clinic</h1>
+                   </div>
+                   <div>
+                      <video id="yourVideo" autoplay muted playsinline></video>
+                      <video id="friendsVideo" autoplay playsinline></video>
+                   </div>   
+                   <div>
+                      <!-- IMPORTANT REMBER TO CHANGE ID ON BUTTON -->
+                   <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+                   </div>   
+                   <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+                   <script src="js/script.js"></script>
+                </div><!-- col-md  8 -->
+            </div><!-- container -->  
+       </div><!-- row -->
+      <!-- @TODO Check for possible conflict of Initial Intake Form versus authentication in signIn -->
+       <div class="space25">&nbsp;</div><!-- holder for future accessibility notifications -->
+       <div class="row">
+            <div class="container">
+                 <div class="col-md-4"><!-- upload -->                 
+                   <div style="text-align:center">
+                     <script>
+                       var slackerror = document.querySelector('slack-error');
+                       var slackalert = document.querySelector('slack-alert');
+                    </script>
+                    <div class="alert" aria-live="polite"></div>
+                       <h3>Upload Documents with Slack!</h3>
+                       <h4>LOG IN with your email account and post to: #sharon-testing</h4>
+                       <form id="goToSlackForm">
+                       <input class="btn btn-primary btn-lg" type="button" value="Go to SLACK"  onclick="window.location.href='https://slack.com/oauth/authorize?client_id=342068113523.371240123760&scope=files:read'" /> 
+                        </form>  
+                   </div><!-- wrapper for form -->
+                 </div><!-- col md-4 for uploading documents -->
+                 
+                 <div class="col-md-8"><!-- intake form -->
+                    <script>
+                       var signinerror = document.querySelector('signin-error');
+                       var signinalert = document.querySelector('signin-alert');
+                    </script>
+                    
+                    <div class="alert" aria-live="polite"></div>
+                    <div><!-- form wrapper -->
+                       <span style="text-align:center"><h3>Sign In</h3></span>
+                     
+                         <form id="signInForm" autocomplete="off" style="text-align:center;">
+                            <div>
+                              <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;  
+                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address.">
+                            </div><br />
+                            <div>
+                              <label for="password">Password:</label>  
+                              <input name="password" id="password" type="password" required x-moz-errormessage="Please specify a valid email address.">
+                            </div>
+                              <div style="margin-top:25px;">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="signIn" id="signIn">
+                         </form> 
+                       
+                      </div><!-- signIn button -->
+                    </div><!-- form wrapper -->
+                  
+                 </div><!-- col md 8 for signIn form --> 
+ 
+        </div><!-- container for intake form -->
+       </div><!-- row for intake form -->
+     
+<!-- scripting for firebase starts here -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+    // Initialize Firebase for Email sign-in
+  var config5 = {
+    apiKey: "AIzaSyBlY3OteC7Dn0y0diemxPlg62XgVMqkCHg",
+    authDomain: "signin-fcc07.firebaseapp.com",
+    databaseURL: "https://signin-fcc07.firebaseio.com",
+    projectId: "signin-fcc07",
+    storageBucket: "signin-fcc07.appspot.com",
+    messagingSenderId: "612057419132"
+  };
+  firebase.initializeApp(config5); 
+  //firebase.initializeApp(config1, config2);
+</script>
+ 
+  </body>   
+</html>
