@@ -15,8 +15,11 @@
   const promise = auth.signInWithEmailAndPassword(email, pass);
   auth.createUserWithEmailAndPassword(email, pass);
 
-const facebookProvider = new firebase.auth.FacebookAuthProvider();
-const facebookPromise = auth.signInWithPopup(facebookProvider)
-const githubProvider = new firebase.auth.GithubAuthProvider();
-const githubPromise = firebase.auth().signInWithPopup(githubProvider);
+//below facebook and github are from the tutorial -- not implemented but saved for reference on how to handle
+//const facebookProvider = new firebase.auth.FacebookAuthProvider();
+//const facebookPromise = auth.signInWithPopup(facebookProvider)
+//const githubProvider = new firebase.auth.GithubAuthProvider();
+//const githubPromise = firebase.auth().signInWithPopup(githubProvider);
+
+firebase.auth().onAuthStateChanged()
  
