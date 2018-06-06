@@ -39,3 +39,10 @@ document.getElementById("btnLogin").addEventListener('click', e=>{
   promise.catch(e=>{ console.log(e.massage)})
 })
  
+firebase.auth().onAuthStateChanged(user=>{ 
+  if(user){
+    document.getElementById("btnLogOut").classList.remove('hide')
+  } else{
+    document.getElementById("btnLogOut").classList.add('hide')
+  }
+})
