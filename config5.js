@@ -1,8 +1,8 @@
-
   var config5 = {
     apiKey: "AIzaSyBlY3OteC7Dn0y0diemxPlg62XgVMqkCHg",
     authDomain: "signin-fcc07.firebaseapp.com",
     projectId: "signin-fcc07",
+    databaseURL: "https://signin-fcc07.firebaseio.com",
     storageBucket: "signin-fcc07.appspot.com",
     messagingSenderId: "612057419132"
   };
