@@ -94,35 +94,37 @@
                        
                        /////
                        
-            <!-- Container for the demo -->
-      <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-        <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
-          <h2 class="mdl-card__title-text">Firebase Email &amp; Password Authentication</h2>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          <p>Enter an email and password below and either sign in to an existing account or sign up</p>
+  
+    <h3>Firebase</h3>
+    <em>Username and Password Authentication</em>
+      <hr>
 
-          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
-          &nbsp;&nbsp;&nbsp;
-          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
-          <br/><br/>
-          <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
-          &nbsp;&nbsp;&nbsp;
-          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
-          &nbsp;&nbsp;&nbsp;
-          <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
-          &nbsp;&nbsp;&nbsp;
-          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+    <p>
+      <p id="current-email" style="display:none"></p>
+      <button type="button" id="signout" style="display:none">Signout</button>
+    </p>
 
-          <!-- Container where we'll display the user details -->
-          <div class="quickstart-user-details-container">
-            Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
-            <div>Firebase auth <code>currentUser</code> object value:</div>
-            <pre><code id="quickstart-account-details">null</code></pre>
-          </div>
-        </div>
-      </div>
-                        <script type="text/javascript" src=" quickstart-test.js"></script>
+    <div id="signup-form">
+      <h4>signup form</h4>
+      <input type="text" id="username" placeholder="enter your username"/><br/>
+      <input type="email" id="email" placeholder="enter your email"><br/>
+      <input type="password" id="password" placeholder="enter your password"/><br/>
+      <button type="button" name="button" id="signup">Signup</button>
+    </div>
+
+  
+    <div id="signin">
+    <h4>signin</h4>
+      <input type="email" id="signinEmail" placeholder="enter your email"><br/>
+      <input type="password" id="signinPassword" placeholder="enter your password"/><br/>
+      <button type="button" name="button" id="signin">Singin</button>
+    </div>
+    <hr/>
+
+
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+  <script src="app.js"></script>
                        
                       ///////
                     </div><!-- form wrapper -->
