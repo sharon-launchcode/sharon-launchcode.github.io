@@ -46,3 +46,7 @@ firebase.auth().onAuthStateChanged(user=>{
     document.getElementById("btnLogOut").classList.add('hide')
   }
 })
+document.getElementById("btnLogOut").addEventListener('click', e=>{
+  firebase.auth().signOut();
+  console.log('logged out')
+})
