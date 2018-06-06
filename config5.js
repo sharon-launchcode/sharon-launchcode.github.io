@@ -31,4 +31,11 @@ document.getElementById("btnSignUp").addEventListener('click', e=>{
    console.log(error.message);
   });
 })
+//sign in users that have already been created
+document.getElementById("btnLogin").addEventListener('click', e=>{
+  const email = document.getElementById("txtEmail").value;
+  const pass = document.getElementById("txtPassword").value;
+  const promise = firebase.auth().signInWithEmailAndPassword(email, pass);
+  promise.catch(e=>{ console.log(e.massage)})
+})
  
