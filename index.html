@@ -205,7 +205,37 @@ limitations under the License.
     };
   </script>
 </head>
-<body>
+  //////
+    <body onload="showMyFace()">
+     <div class="space25">&nbsp;</div><!-- holder for future accessibility notifications -->
+       <div class="row">
+       <div class="container">
+            <div class="col-md-4"><!-- contains chat -->
+           <iframe
+              width="350"
+              height="430"
+              src="https://console.dialogflow.com/api-client/demo/embedded/2826f62d-5973-4ab8-b5c8-84a4d026e807">
+          </iframe>
+            </div><!-- col md 4 -->       
+              <div class="col-md-8">
+                   <div class="video-header">
+                      <h1>Proof of Concept: Virtual Legal Clinic</h1>
+                   </div>
+                   <div>
+                      <video id="yourVideo" autoplay muted playsinline></video>
+                      <video id="friendsVideo" autoplay playsinline></video>
+                   </div>   
+                   <div>
+                      <!-- IMPORTANT REMBER TO CHANGE ID ON BUTTON -->
+                   <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+                   </div>   
+                   <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+                   <script src="js/script.js"></script>
+                </div><!-- col-md  8 -->
+            </div><!-- container -->  
+       </div><!-- row -->
+  //////
+<!-- <body>  -->
 <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
   <!-- Header section containing title -->
