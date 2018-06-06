@@ -6,7 +6,6 @@
     storageBucket: "signin-fcc07.appspot.com",
     messagingSenderId: "612057419132"
   };
-
   const database = firebase.database()
   // From docs: Get a reference to the database service
   // From docs: var database = firebase.database();
