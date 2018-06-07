@@ -21,10 +21,24 @@
 <head>
   <title>Proof of Concept | Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <!-- firebase authentication -->
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+
+<!-- Add additional services you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-functions.js"></script>
+
+<!-- Comment out (or don't include) services you don't want to use -->
+<!-- <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-storage.js"></script> -->
+  <!-- end firebase authentication --> 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/autocomplete.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
- 
  </head>
   <body onload="showMyFace()">
      <div class="space25">&nbsp;</div><!-- holder for future accessibility notifications -->
@@ -73,39 +87,22 @@
                    </div><!-- wrapper for form -->
                  </div><!-- col md-4 for uploading documents -->
                  
-                 <div class="col-md-8"><!-- intake form -->
-                    <script>
-                       var signinerror = document.querySelector('signin-error');
-                       var signinalert = document.querySelector('signin-alert');
-                    </script>
+                 <div class="col-md-8">
                     
                     <div class="alert" aria-live="polite"></div>
-                    <div><!-- form wrapper -->
-                       <span style="text-align:center"><h3>Sign In</h3></span>
-                     
-                         <form id="signInForm" autocomplete="off" style="text-align:center;">
-                            <div>
-                              <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;  
-                              <input name="email" id="email" type="email" required x-moz-errormessage="Please specify a valid email address.">
-                            </div><br />
-                            <div>
-                              <label for="password">Password:</label>  
-                              <input name="password" id="password" type="password" required x-moz-errormessage="Please specify a valid email address.">
-                            </div>
-                              <div style="margin-top:25px;">
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="signIn" id="signIn">
-                         </form> 
-                       
-                      </div><!-- signIn button -->
-                    </div><!-- form wrapper -->
-                  
-                 </div><!-- col md 8 for signIn form --> 
- 
-        </div><!-- container for intake form -->
+                      <div style="text-align:center;">
+                         <h3>Under Development</h3>
+                         <h4>Need an account?<a href="signup-signin.html">Sign up here.</a></h4> 
+                    </div>
+                 </div><!-- col md-8 -->
+
+         </div><!-- container for intake form -->
        </div><!-- row for intake form -->
      
 <!-- scripting for firebase starts here -->
-<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<!-- moved scripting to config5.js -->     
+<!-- <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script> -->
+<!--     
 <script>
     // Initialize Firebase for Email sign-in
   var config5 = {
@@ -116,9 +113,9 @@
     storageBucket: "signin-fcc07.appspot.com",
     messagingSenderId: "612057419132"
   };
-  firebase.initializeApp(config5); 
+  //firebase.initializeApp(config5); 
   //firebase.initializeApp(config1, config2);
-</script>
- 
-  </body>   
+</script> 
+  -->
+  </body> 
 </html>
