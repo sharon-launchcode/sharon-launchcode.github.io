@@ -1,12 +1,10 @@
-# Virtual Clinic Prototype
+# Virtual Clinic Prototype | PHASE ONE
 #### A Project Based on Insights from the Legal-Aid Hackathon 2018 | https://www.legalaidhackathon.org/
-
-## THIS IS PHASE ONE OF THE PLATFORM
 ## IMPORTANT!! THIS PLATFORM IS FOR PROOF OF CONCEPT PURPOSES ONLY. THIS PLATFORM IS NOT TO BE USED FOR ANY LEGAL PURPOSE.
 
 #### This Virtual Legal Clinic Prototype really arose as a result from working with two teams in the May 2018 Legal Aid Hackathon.  Both of these amazing teams were two of the *many* amazing teams who wanted to use technology to reach those who needed legal assistance.  
 
-### Background: The Hackathon
+### HACKATHON
 
 #### Project Idea | Jessica Rae
 ##### https://trello.com/c/eWme4aF4/149-description
@@ -23,7 +21,7 @@
 ```In an ideal world, this chatbot could be expanded to cover the entire U.S. and be available to all youth and young adults who have aged out of care.```
 
 
-#### Special Thanks to: 
+##### Special Thanks to: 
 #### Abhijeet Chavan | Joseph Schieffer | Sam Harden | Brian Stewart | Jack Haycock | Jessica Rae | Kimi deMent | 
 
 ##### All teams were doing great things, and in all cases we found that members from one team would reach out to help another.  It so happened that my efforts focued on the work of two teams; Chatbot for Youth Aging Out Of Foster Care, and the Virtual Legal Clinic, as both wanted to use chatbots for outreach.  Below are more details for the two projects, from which the proof-of-concept for this repository rests.
@@ -73,31 +71,31 @@
 
 ### Phase THREE
 
-##### Kimi DeMent, myself, and teams of lawyers and law students are now testing the Legaler platform.
+#### Phase Three of developing a Virtual Legal Clinic has started Kimi DeMent, myself, and teams of lawyers and law students will now start testing the Legaler platform.   
 
 
-### About the Source Code:
-#### Significant portions of the code used in this project were based on the tutorials provided by the following sources, or work done by individuals, with great gratitude towards the authors:
+#### About the Source Code:
+##### Significant portions of the code used in this project were based on the tutorials provided by the following sources, or work done by individuals, with great gratitude towards the authors:
 
-### Art of the Web
+#### Art of the Web
 ##### JavaScript: Preventing Double Form Submission
 ##### https://www.the-art-of-web.com/javascript/doublesubmit/
 
-### Brad Traversy -- Please support him on Paetron
+#### Brad Traversy -- Please support him on Paetron
 ##### https://github.com/bradtraversy/firebasecontact
 
-### Brian Stewart
+#### Brian Stewart
 ##### http://bdsworks.org
 
-### Discourse | Karthik Kamalakannankarthik
+#### Discourse | Karthik Kamalakannankarthik
 ##### https://discourse.skcript.com/t/how-do-i-create-a-contact-form-using-firebase-as-backend/392
 
-### MDN
+#### MDN
 ##### Accessibility Note: opacity is used to hide the file input instead of visibility: hidden or display: none, because assistive technology interprets the latter two styles to mean the file input isn't interactive. 
 ##### https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
 
-### W3C SChools -- these are only a few of the many, many resources I've used from you -- you ROCK!
-#### https://www.w3schools.com/default.asp
+#### W3C SChools -- these are only a few of the many, many resources I've used from you -- you ROCK!
+##### https://www.w3schools.com/default.asp
 
 ##### How To - Autocomplete
 ##### https://www.w3schools.com/howto/howto_js_autocomplete.asp
@@ -109,12 +107,12 @@
 ##### JavaScript Date Objects
 ##### https://www.w3schools.com/js/js_dates.asp
 
-### Web Reference | Stephen F. Mai
+#### Web Reference | Stephen F. Mai
 
 ##### JavaScript's confirm() Method and Forms: WebReference.com
 ##### http://webreference.com/programming/javascript/confirm/index-2.html
 
-### Website Beaver | David Marcus
-#### https://websitebeaver.com
+#### Website Beaver | David Marcus
+##### https://websitebeaver.com
 
 ##### WebRTC code based on the tutorial by David Marcus | https://websitebeaver.com/insanely-simple-webrtc-video-chat-using-firebase-with-codepen-demo#explanation-of-codepen-demo
