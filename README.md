@@ -1,6 +1,7 @@
 # Virtual Clinic Prototype
 #### A Project Based on Insights from the Legal-Aid Hackathon 2018 | https://www.legalaidhackathon.org/
 
+## THIS IS PHASE ONE OF THE PLATFORM
 ## IMPORTANT!! THIS PLATFORM IS FOR PROOF OF CONCEPT PURPOSES ONLY.   
 ## THIS PLATFORM IS NOT TO BE USED FOR ANY LEGAL PURPOSE.
 
@@ -8,13 +9,11 @@
 
 ### Phase ONE
 
-
 #### In short, tasking was to take off-the-shelf technology and create a video-clinic that may reach the many who need legal help, but cannot afford to come to a lawyer's office.  There's many reasons a person needing help cannot access legal help, even though many, many lawyers want to reach out to those in need.   Health and wealth are two major barriers, that we feel, may be overcome with technology.   To that end, the video clinic must be:
 1. Free
 1. Mobile
 1. Use a "mix" of authorization and authentication technologies and protocols.  Some technologies are wide open to ensure quick and easy access, so that even illiterate, ill, injured or isolated clients could talk to someone without a need to sign in, if necessary.  However, for long-term service, and especially for HIPAA and other privacy concerns,  authentication and authorization technologies are employed at different times and different locations.
 1. Off the shelf technology is used.  For example, to upload documents, Slack is used; attendant to that is all the authentication technologies used by Slack.
-
 
 
 ### Special Thanks to: 
@@ -55,7 +54,7 @@
 
 ```In an ideal world, this chatbot could be expanded to cover the entire U.S. and be available to all youth and young adults who have aged out of care.```
 
-### Phase TWO
+### PHASE TWO
 
 ##### Phase Two of the project started at the end of May.  Kimi DeMent recommended that certain technologies be highlighted, and others dropped.  For example, we found that Dialogflow, although a great solution for the Youth Aging Out of Foster Care project, was not really appropriate for the purposes of a Virtual Legal Clinic.   We wanted to test the use of Slack a little more as a means to put clients into individual rooms, and work with them from there.   At the time, too, we found that a technology called ZOOM could be incorporated into Slack, and we looked into that as a means of possibly getting into Slack and into a video conference.  We also looked into a technology called Discord, because of its ability to use voice, but it was not secure enough for use with clients.   A screenshot of the next iteration may be seen below.
 
@@ -64,6 +63,9 @@
 ##### The overarching point of developing a web page incorporating these technologies was to try to develop a platform that was free to use.   The main sticking point is that it was to be HIPAA compliant, and for various reasons, that was going to require funds.
 
 ##### On July 20, Phase Two was completed. We had a WebEx meeting with several lawyers and law students, and decided against the platform in favor of another, new platform called, "Legaler".   This new platform had been developed by lawyers, and was built specifically to their needs.  Critically, it was built to be HIPAA compliant.  The developers and creators of Legaler had a special arrangement where the platform could be used for free by qualified legal organizations, and it was a unaminous decision (my own vote included) to move to use Legaler as a platform. 
+
+### Special Thanks to: 
+###  Kimi deMent | Lori Gonzalez | Bettina LaBoy Reed | Michael L.Forrester | Curtis Campbel | John Farringer | Anne Louise Wirthlin | Sping Miller | Zack | and other team members at the meeting.
 
 ### Phase THREE
 
