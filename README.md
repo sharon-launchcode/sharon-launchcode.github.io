@@ -8,9 +8,11 @@
 
 #### Phase Two
 
+##### Phase Two of the project involved the next step from the original recommendations seen in this prototype. 
+
 ##### On July 20, Phase Two was completed. 
 
-![images/Phase2.png]
+![Screenshot of Phase Two Interface](images/Phase2.png)
 
 #### In short, tasking was to take off-the-shelf technology and create a video-clinic that may reach the many who need legal help, but cannot afford to come to a lawyer's office.  There's many reasons a person needing help cannot access legal help, even though many, many lawyers want to reach out to those in need.   Health and wealth are two major barriers, that we feel, may be overcome with technology.   To that end, the video clinic must be:
 1. Free
