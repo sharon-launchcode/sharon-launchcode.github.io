@@ -6,6 +6,12 @@
 
 #### This Virtual Legal Clinic Prototype really arose as a result from working with two teams in the May 2018 Legal Aid Hackathon.  Both of these amazing teams were two of the *many* amazing teams who wanted to use technology to reach those who needed legal assistance.  
 
+#### Phase Two
+
+##### On July 20, Phase Two was completed. 
+
+![images/Phase2.png]
+
 #### In short, tasking was to take off-the-shelf technology and create a video-clinic that may reach the many who need legal help, but cannot afford to come to a lawyer's office.  There's many reasons a person needing help cannot access legal help, even though many, many lawyers want to reach out to those in need.   Health and wealth are two major barriers, that we feel, may be overcome with technology.   To that end, the video clinic must be:
 1. Free
 1. Mobile
