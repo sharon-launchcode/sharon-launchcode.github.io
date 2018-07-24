@@ -6,13 +6,8 @@
 
 #### This Virtual Legal Clinic Prototype really arose as a result from working with two teams in the May 2018 Legal Aid Hackathon.  Both of these amazing teams were two of the *many* amazing teams who wanted to use technology to reach those who needed legal assistance.  
 
-#### Phase Two
+### Phase ONE
 
-##### Phase Two of the project involved the next step from the original recommendations seen in this prototype. 
-
-##### On July 20, Phase Two was completed. 
-
-![Screenshot of Phase Two Interface](images/Phase2.png)
 
 #### In short, tasking was to take off-the-shelf technology and create a video-clinic that may reach the many who need legal help, but cannot afford to come to a lawyer's office.  There's many reasons a person needing help cannot access legal help, even though many, many lawyers want to reach out to those in need.   Health and wealth are two major barriers, that we feel, may be overcome with technology.   To that end, the video clinic must be:
 1. Free
@@ -60,6 +55,19 @@
 
 ```In an ideal world, this chatbot could be expanded to cover the entire U.S. and be available to all youth and young adults who have aged out of care.```
 
+### Phase TWO
+
+##### Phase Two of the project started at the end of May.  Kimi DeMent recommended that certain technologies be highlighted, and others dropped.  For example, we found that Dialogflow, although a great solution for the Youth Aging Out of Foster Care project, was not really appropriate for the purposes of a Virtual Legal Clinic.   We wanted to test the use of Slack a little more as a means to put clients into individual rooms, and work with them from there.   At the time, too, we found that a technology called ZOOM could be incorporated into Slack, and we looked into that as a means of possibly getting into Slack and into a video conference.  We also looked into a technology called Discord, because of its ability to use voice, but it was not secure enough for use with clients.   A screenshot of the next iteration may be seen below.
+
+![Screenshot of Phase Two Interface](images/Phase2.png)
+
+##### The overarching point of developing a web page incorporating these technologies was to try to develop a platform that was free to use.   The main sticking point is that it was to be HIPAA compliant, and for various reasons, that was going to require funds.
+
+##### On July 20, Phase Two was completed. We had a WebEx meeting with several lawyers and law students, and decided against the platform in favor of another, new platform called, "Legaler".   This new platform had been developed by lawyers, and was built specifically to their needs.  Critically, it was built to be HIPAA compliant.  The developers and creators of Legaler had a special arrangement where the platform could be used for free by qualified legal organizations, and it was a unaminous decision (my own vote included) to move to use Legaler as a platform. 
+
+### Phase THREE
+
+##### Kimi DeMent, myself, and teams of lawyers and law students are now testing the Legaler platform.
 
 
 ### About the Source Code:
