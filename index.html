@@ -71,7 +71,7 @@
             </div><!-- container -->  
        </div><!-- row -->
       <!-- @TODO Check for possible conflict of Initial Intake Form versus authentication in signIn -->
-       <div class="space25">&nbsp;</div><!-- holder for future accessibility notifications -->
+       <div>&nbsp;</div><!-- holder for future accessibility notifications -->
        <div class="row">
             <div class="container">
                  <div class="col-md-4"><!-- upload -->                 
@@ -81,10 +81,8 @@
                        var slackalert = document.querySelector('slack-alert');
                     </script>
                     <div class="alert" aria-live="polite"></div>
-                       <h3>Upload Documents with Slack!</h3>
-                       <h4>LOG IN with your email account and post to: #sharon-testing</h4>
                        <form id="goToSlackForm">
-                       <input class="btn btn-primary btn-lg" type="button" value="Go to SLACK"  onclick="window.location.href='https://slack.com/oauth/authorize?client_id=342068113523.371240123760&scope=files:read'" /> 
+                       <input class="btn btn-primary btn-lg" type="button" name="Slack" value="Go to SLACK #sharon-testing"  onclick="window.location.href='https://slack.com/oauth/authorize?client_id=342068113523.371240123760&scope=files:read'" /> 
                         </form>  
                    </div><!-- wrapper for form -->
                     
