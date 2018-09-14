@@ -5,7 +5,7 @@
 
 var CONTACT_TEMPLATE = {name: "", email: "", description: "", errors: null}
 var apiKey = “zIxSAzLBj3L96LrJosswrtqi936yHNDK”
-var myDB = “mongodb://sharonaustin2017:($$J1mmy!!)@ds157742.mlab.com:57742/mama-sandbox1”
+var myDB = “mongodb://sharonaustin2017:mamahelpme2017@ds157742.mlab.com:57742/mama-sandbox1”
 var myCollection = “contacts”
 
 
