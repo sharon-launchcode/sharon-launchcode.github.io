@@ -5,6 +5,8 @@
 
 var CONTACT_TEMPLATE = {name: "", email: "", description: "", errors: null}
 
+
+
 /*
  * Model
  */
@@ -49,22 +51,6 @@ function updateNewContact(contact) {
 
 function submitNewContact() {
   var contact = Object.assign({}, state.newContact, {key: state.contacts.length + 1, errors: {}});
-  
-     let contactDocument = { 
-     name: contact.name, 
-     email: contact.email, 
-     description: contact.description, 
-     _id: contact.email 
-   };
-  
-
-      $.ajax( { 
-       url:“https://api.mlab.com/api/1/databases/"+myDB+"/collections/"+myCollection+"?apiKey="+apiKey,
-       data: JSON.stringify( [ contactDocument ] ),
-       type: “POST”,
-       contentType: “application/json”
-      } )
-},
   
   if (!contact.name) {
     contact.errors.name = ["Please enter your new contact's name"]
