@@ -2,7 +2,9 @@
  * Constants
  */
 
-
+var apiKey = “zIxSAzLBj3L96LrJosswrtqi936yHNDK”
+var myDB = “mama-sandbox1”
+var myCollection = “contacts”
 var CONTACT_TEMPLATE = {name: "", email: "", description: "", errors: null}
 
 
