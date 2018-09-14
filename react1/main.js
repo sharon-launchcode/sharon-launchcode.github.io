@@ -8,7 +8,6 @@ var myCollection = “contacts”
 var CONTACT_TEMPLATE = {name: "", email: "", description: "", errors: null}
 
 
-
 /*
  * Model
  */
