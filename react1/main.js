@@ -2,7 +2,9 @@
  * Constants
  */
 
-
+var apiKey = “Your_API_KEY”
+var myDB = “Your Database Name”
+var myCollection = “contacts”
 var CONTACT_TEMPLATE = {name: "", email: "", description: "", errors: null}
 
 
