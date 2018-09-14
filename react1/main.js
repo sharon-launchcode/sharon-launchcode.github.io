@@ -59,7 +59,14 @@ function submitNewContact() {
      description: contact.description, 
      _id: contact.email 
    };
-// TODO: Insert Document API Call
+  
+
+      $.ajax( { 
+       url:“https://api.mlab.com/api/1/databases/"+myDB+"/collections/"+myCollection+"?apiKey="+apiKey,
+       data: JSON.stringify( [ contactDocument ] ),
+       type: “POST”,
+       contentType: “application/json”
+      } )
 },
   
   if (!contact.name) {
