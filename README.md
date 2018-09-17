@@ -16,7 +16,7 @@
 
 ##### Phase One also included integration between the Dialogflow chat technology and SLACK.  We wanted to incorporate the automated "bot" responses in the SLACK channel as a means of saving lawyers time.
 
-![Screenshot of Phase One Interface](images/Slack_App1.png)
+![Screenshot of SLACK Interface](images/SLACK_App1.png)
 
 ##### In the image above, you may see that by pressing the SLACK button, one is taken to another screen for authorization.  If the user has been authorized to be in the channel, he will be allowed to continue into SLACK.
 
