@@ -7,13 +7,20 @@
 
 ##### See BACKGROUND-INFORMATION.md for more information
 
+#### PHASE ONE
+
+##### Phase One of the Virtual Legal Clinic arose as a result of discussions at a Hackathon with lawyers trying to do pro-bono work.  One of the lawywers was trying to use Dialogflow as a chat mechanism in order to be able to assist youth aging out of foster care.  Another lawyer was trying to create a remote virtual video clinic for clients in remote locations.   In conversation, we found that each lawyer's need and technological solution could help the other lawyer.  The first phase was the initial model for doing so.
+
+
 ![Screenshot of Phase One Interface](images/Phase1.png)
 
-#### PHASE I
+#### PHASE TWO
+
+##### For Phase Two, the lawyer who wanted to assist youth aging out of foster care focused soley on the chat mechanism, although we all benefited from working with her and her team on the chat.   At that point, we focused our attention more heavily on the video components of the virtual clinic, and to remove the chat component.  
 
 
 ![Screenshot of Phase Two Interface](images/Phase2.png)
 
-#### PHASE 2
+#### PHASE THREE
 
 ![Screenshot of Phase Three Interface](images/Phase3.png)
