@@ -16,7 +16,7 @@
 
 #### PHASE TWO
 
-##### For Phase Two, the lawyer who wanted to assist youth aging out of foster care focused soley on the chat mechanism, although we all benefited from working with her and her team on the chat.   At that point, we focused our attention more heavily on the video components of the virtual clinic, and to remove the chat component.  
+##### For Phase Two, the lawyer who wanted to assist youth aging out of foster care focused soley on the chat mechanism, although we all benefited from working with her and her team on the chat.   At that point, we focused our attention more heavily on the video components of the virtual clinic, and to remove the chat "interface" component, although we considered keeping the functionality of the chat embedded in the SLACK channel. 
 
 
 ![Screenshot of Phase Two Interface](images/Phase2.png)
