@@ -7,7 +7,7 @@
 
 ##### See BACKGROUND-INFORMATION.md for more information
 
-### PHASE ONE
+## PHASE ONE
 
 ##### Phase One of the Virtual Legal Clinic arose as a result of discussions at a Hackathon with lawyers trying to do pro-bono work.  One of the lawywers was trying to use Dialogflow as a chat mechanism in order to be able to assist youth aging out of foster care.  Another lawyer was trying to create a remote virtual video clinic for clients in remote locations.   In conversation, we found that each lawyer's need and technological solution could help the other lawyer.  The first phase was the initial model for doing so.
 
@@ -21,14 +21,20 @@
 ##### In the image above, you may see that by pressing the SLACK button, one is taken to another screen for authorization.  If the user has been authorized to be in the channel, he will be allowed to continue into SLACK.
 
 
+![Screenshot of SLACK Interface](images/SLACK_App2.png)
 
-### PHASE TWO
-
-##### For Phase Two, the lawyer who wanted to assist youth aging out of foster care focused soley on the chat mechanism, although we all benefited from working with her and her team on the chat.   At that point, we focused our attention more heavily on the video components of the virtual clinic, and to remove the chat "interface" component, although we considered keeping the functionality of the chat embedded in the SLACK channel. 
+##### In the image above, you may see that you are in the SLACK channel, interacting with the chatbot powered by Dialogflow.
 
 
-![Screenshot of Phase Two Interface](images/Phase2.png)
+## PHASE TWO
 
-#### PHASE THREE
+##### For Phase Two, the lawyer who wanted to assist youth aging out of foster care focused soley on the chat mechanism, although we all benefited from working with her and her team on the chat.   At that point, we focused our attention more heavily on the video components of the virtual clinic, and to remove the chat "interface" component, although we considered keeping the functionality of the chat embedded in the SLACK channel. To that end, the users wanted to try "ZOOM", a video capability known to play well with SLACK.  As we were working through this, we found that a company has preceded us in creating a prototype Virtual Clinic for lawyers.  It was developed by lawyers, and this amazing, great, platform is called, "Legaler".   We've all decided to throw our weight behind helping to refine the Legaler platform.  At this point, my role in working with the lawyers has changed from developer to user tester.  As a non-lawyer, my involvement with the platform is to serve as a "client" tester. 
+
+
+![Screenshot of Phase Two Interface](images/PhaseII.png)
+
+## PHASE THREE
+
+##### For Phase Three, I am taking the lessons learned from the first two iterations of the platform and re-purposing it to reunite children who have been separated from their parents. 
 
 ![Screenshot of Phase Three Interface](images/Phase3.png)
