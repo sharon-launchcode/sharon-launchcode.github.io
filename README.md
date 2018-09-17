@@ -6,3 +6,14 @@
 #### As I continue to work with the amazing Legaler team as a non-lawyer "client" tester, I have since re-purposed this site to explore other technical challenges; namely, integration.   This project now continues independently of the work done with the Legaler team.
 
 ##### See BACKGROUND-INFORMATION.md for more information
+
+![Screenshot of Phase One Interface](images/Phase1.png)
+
+#### PHASE I
+
+
+![Screenshot of Phase Two Interface](images/Phase2.png)
+
+#### PHASE 2
+
+![Screenshot of Phase Three Interface](images/Phase3.png)
